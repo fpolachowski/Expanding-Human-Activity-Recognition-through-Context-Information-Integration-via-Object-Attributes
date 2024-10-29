@@ -63,7 +63,7 @@ def train(options: TrainingConfig):
         num_queries=16, # max class count = 13
         aux_loss=False
     )
-    detector.load_checkpoint("./experiments/rare-eon-47", "best")
+    detector.load_checkpoint("./src/model", "detr")
     
     
     optimizer = torch.optim.Adam(model.parameters(), lr=options.learning_rate)
