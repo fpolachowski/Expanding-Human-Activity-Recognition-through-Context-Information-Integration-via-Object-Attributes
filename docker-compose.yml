@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   model:
-    image: CHAR
+    image: char
     build:
       context: .
       shm_size: '16gb'
