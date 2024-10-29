@@ -1,8 +1,5 @@
 import os
 import torch
-import torch.nn.functional as F
-from scipy.optimize import linear_sum_assignment
-import utils.box_ops as box_ops
 
 
 def safe_create_folder(name):
