@@ -5,6 +5,12 @@ The model is setup to be trained on the EPIC-Kitchen dataset.
 
 Pre-trained models will be available soon.
 
+## Requirements
+
+- Python \>= 3.10
+- PyTorch \>= 2.0
+- Docker & Docker Compose
+
 ## Setup
 
 1. Download the [EPIC-Kitchen Dataset](https://epic-kitchens.github.io/2020-55.html)
