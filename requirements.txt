@@ -1,0 +1,13 @@
+numpy
+opencv-python
+tqdm
+pillow
+pandas
+wandb
+ftfy
+regex
+torchvision
+torch_tb_profiler
+safetensors
+scipy
+torchtext

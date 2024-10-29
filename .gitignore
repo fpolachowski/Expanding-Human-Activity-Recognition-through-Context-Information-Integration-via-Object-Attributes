@@ -1,0 +1,10 @@
+experiments/
+wandb/
+test.py
+__pycache__/
+bpe_simple_vocab_16e6.txt.gz
+log/
+glove.*
+*.pickle
+*.jpg
+*.pdf

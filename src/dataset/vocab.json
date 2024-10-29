@@ -1,0 +1,8588 @@
+{
+    "put microwave": [
+        6,
+        228
+    ],
+    "put in fridge": [
+        6,
+        105,
+        55
+    ],
+    "wash jug": [
+        7,
+        200
+    ],
+    "clean scissors": [
+        16,
+        189
+    ],
+    "remove lid": [
+        67,
+        77
+    ],
+    "pick up lighter": [
+        32,
+        28,
+        378
+    ],
+    "empty mug": [
+        116,
+        122
+    ],
+    "pick up sugar": [
+        32,
+        28,
+        216
+    ],
+    "empty saucepan": [
+        116,
+        66
+    ],
+    "close butter spray can": [
+        26,
+        24,
+        99,
+        88
+    ],
+    "rinse coffee pot": [
+        14,
+        68,
+        62
+    ],
+    "put carrot": [
+        6,
+        72
+    ],
+    "fill glass": [
+        9,
+        23
+    ],
+    "take coffee": [
+        12,
+        68
+    ],
+    "pick up spice": [
+        32,
+        28,
+        112
+    ],
+    "take mug": [
+        12,
+        122
+    ],
+    "take tortilla": [
+        12,
+        126
+    ],
+    "pick up cloth": [
+        32,
+        28,
+        119
+    ],
+    "slice tomato": [
+        42,
+        53
+    ],
+    "lather spoon": [
+        65,
+        39
+    ],
+    "dry mug": [
+        64,
+        122
+    ],
+    "pour yeast": [
+        18,
+        279
+    ],
+    "take fridge": [
+        12,
+        55
+    ],
+    "open sauce": [
+        13,
+        81
+    ],
+    "pour soap": [
+        18,
+        130
+    ],
+    "move bottle": [
+        85,
+        61
+    ],
+    "wash tupperware": [
+        7,
+        153
+    ],
+    "lather soap knife": [
+        65,
+        130,
+        49
+    ],
+    "put down tomato": [
+        6,
+        57,
+        53
+    ],
+    "lather colander": [
+        65,
+        87
+    ],
+    "put whisk counter": [
+        6,
+        33,
+        21
+    ],
+    "take bag": [
+        12,
+        25
+    ],
+    "get knife": [
+        93,
+        49
+    ],
+    "open box": [
+        13,
+        78
+    ],
+    "other": [
+        22
+    ],
+    "take oregano": [
+        12,
+        159
+    ],
+    "fill up bottle": [
+        9,
+        28,
+        61
+    ],
+    "move pot": [
+        85,
+        62
+    ],
+    "empty can": [
+        116,
+        88
+    ],
+    "rinse jug": [
+        14,
+        200
+    ],
+    "put packet": [
+        6,
+        268
+    ],
+    "get cloth": [
+        93,
+        119
+    ],
+    "move tap": [
+        85,
+        89
+    ],
+    "place yoghurt": [
+        34,
+        235
+    ],
+    "insert carafe": [
+        298,
+        245
+    ],
+    "take jam glass 2 fridge": [
+        12,
+        54,
+        23,
+        171,
+        55
+    ],
+    "take onion": [
+        12,
+        11
+    ],
+    "empty pot": [
+        116,
+        62
+    ],
+    "tip rice": [
+        372,
+        79
+    ],
+    "rinse v60": [
+        14,
+        285
+    ],
+    "pick up bottle opener": [
+        32,
+        28,
+        61,
+        350
+    ],
+    "take chopped tomato": [
+        12,
+        225,
+        53
+    ],
+    "cut skin": [
+        10,
+        76
+    ],
+    "pour stock": [
+        18,
+        146
+    ],
+    "put stock": [
+        6,
+        146
+    ],
+    "enter kitchen": [
+        317,
+        174
+    ],
+    "lather plate": [
+        65,
+        29
+    ],
+    "put down food container": [
+        6,
+        57,
+        20,
+        131
+    ],
+    "take plate": [
+        12,
+        29
+    ],
+    "put dough": [
+        6,
+        19
+    ],
+    "turn on tap": [
+        41,
+        73,
+        89
+    ],
+    "wash cup": [
+        7,
+        48
+    ],
+    "put down oil bottle": [
+        6,
+        57,
+        40,
+        61
+    ],
+    "grab butter": [
+        186,
+        24
+    ],
+    "open tupperware": [
+        13,
+        153
+    ],
+    "slice lemon": [
+        42,
+        187
+    ],
+    "get bowl": [
+        93,
+        5
+    ],
+    "lather potato peeler": [
+        65,
+        38,
+        316
+    ],
+    "stir pan content": [
+        4,
+        8,
+        184
+    ],
+    "check tortilla": [
+        180,
+        126
+    ],
+    "search fridge": [
+        269,
+        55
+    ],
+    "clean coffee maker": [
+        16,
+        68,
+        227
+    ],
+    "throw lemon": [
+        113,
+        187
+    ],
+    "throw leftover": [
+        113,
+        337
+    ],
+    "take foil": [
+        12,
+        344
+    ],
+    "check oil": [
+        180,
+        40
+    ],
+    "put ladle": [
+        6,
+        161
+    ],
+    "take measuring cup l counter": [
+        12,
+        63,
+        48,
+        106,
+        21
+    ],
+    "mix salad": [
+        17,
+        52
+    ],
+    "lather fork": [
+        65,
+        27
+    ],
+    "put cup": [
+        6,
+        48
+    ],
+    "place cup": [
+        34,
+        48
+    ],
+    "stir mixture": [
+        4,
+        96
+    ],
+    "use knife": [
+        388,
+        49
+    ],
+    "remove lettuce": [
+        67,
+        98
+    ],
+    "rinse finger": [
+        14,
+        393
+    ],
+    "pick up cream": [
+        32,
+        28,
+        390
+    ],
+    "pick up paper": [
+        32,
+        28,
+        143
+    ],
+    "wash grater": [
+        7,
+        212
+    ],
+    "wipe off plate": [
+        70,
+        95,
+        29
+    ],
+    "get salad": [
+        93,
+        52
+    ],
+    "put towel fridge counter": [
+        6,
+        125,
+        55,
+        21
+    ],
+    "throw into trash": [
+        113,
+        165,
+        267
+    ],
+    "wipe counter": [
+        70,
+        21
+    ],
+    "put down meat": [
+        6,
+        57,
+        44
+    ],
+    "clean kitchen sink": [
+        16,
+        174,
+        56
+    ],
+    "pick up meat": [
+        32,
+        28,
+        44
+    ],
+    "shake jar": [
+        109,
+        208
+    ],
+    "take brownie bag counter": [
+        12,
+        37,
+        25,
+        21
+    ],
+    "clean inner side": [
+        16,
+        310,
+        250
+    ],
+    "remove garlic": [
+        67,
+        60
+    ],
+    "clean counter": [
+        16,
+        21
+    ],
+    "take out basket": [
+        12,
+        173,
+        255
+    ],
+    "grab rind": [
+        186,
+        354
+    ],
+    "pick up mincing knife": [
+        32,
+        28,
+        247,
+        49
+    ],
+    "open dishwasher": [
+        13,
+        207
+    ],
+    "put in freezer": [
+        6,
+        105,
+        287
+    ],
+    "put down chopstick": [
+        6,
+        57,
+        214
+    ],
+    "fill water tap measuring cup l": [
+        9,
+        43,
+        89,
+        63,
+        48,
+        106
+    ],
+    "put down liquid": [
+        6,
+        57,
+        217
+    ],
+    "place plastic wrap": [
+        34,
+        151,
+        233
+    ],
+    "take filter": [
+        12,
+        168
+    ],
+    "put down teaspoon": [
+        6,
+        57,
+        156
+    ],
+    "open package": [
+        13,
+        155
+    ],
+    "remove peel": [
+        67,
+        31
+    ],
+    "throw sink": [
+        113,
+        56
+    ],
+    "take jug": [
+        12,
+        200
+    ],
+    "shake salt": [
+        109,
+        71
+    ],
+    "clean hob": [
+        16,
+        108
+    ],
+    "stir salad": [
+        4,
+        52
+    ],
+    "stir bowl whisk": [
+        4,
+        5,
+        33
+    ],
+    "take pasta": [
+        12,
+        58
+    ],
+    "clean side": [
+        16,
+        250
+    ],
+    "pick up bacon": [
+        32,
+        28,
+        277
+    ],
+    "stir milk": [
+        4,
+        136
+    ],
+    "wash sponge": [
+        7,
+        110
+    ],
+    "throw away bottle": [
+        113,
+        222,
+        61
+    ],
+    "get bag": [
+        93,
+        25
+    ],
+    "take pesto": [
+        12,
+        192
+    ],
+    "put plate": [
+        6,
+        29
+    ],
+    "put butter spray can cupboard bl": [
+        6,
+        24,
+        99,
+        88,
+        46,
+        120
+    ],
+    "look for cupboard": [
+        170,
+        157,
+        46
+    ],
+    "take spoon plate": [
+        12,
+        39,
+        29
+    ],
+    "take out cheese": [
+        12,
+        173,
+        82
+    ],
+    "wipe hob": [
+        70,
+        108
+    ],
+    "get vinegar": [
+        93,
+        320
+    ],
+    "take carrot": [
+        12,
+        72
+    ],
+    "put away spice": [
+        6,
+        222,
+        112
+    ],
+    "dry pot": [
+        64,
+        62
+    ],
+    "dry cutlery": [
+        64,
+        140
+    ],
+    "get lid": [
+        93,
+        77
+    ],
+    "light cooker": [
+        306,
+        104
+    ],
+    "rinse tomato": [
+        14,
+        53
+    ],
+    "throw rubbish": [
+        113,
+        232
+    ],
+    "put pan sink": [
+        6,
+        8,
+        56
+    ],
+    "grab coffee maker": [
+        186,
+        68,
+        227
+    ],
+    "put egg box fridge": [
+        6,
+        35,
+        78,
+        55
+    ],
+    "put more water": [
+        6,
+        379,
+        43
+    ],
+    "pick up pan": [
+        32,
+        28,
+        8
+    ],
+    "take oil bottle cupboard bl": [
+        12,
+        40,
+        61,
+        46,
+        120
+    ],
+    "close sink": [
+        26,
+        56
+    ],
+    "put in lunch box": [
+        6,
+        105,
+        288,
+        78
+    ],
+    "open tortilla": [
+        13,
+        126
+    ],
+    "place kettle": [
+        34,
+        158
+    ],
+    "press garlic": [
+        201,
+        60
+    ],
+    "put bag clip": [
+        6,
+        25,
+        286
+    ],
+    "pour sauce": [
+        18,
+        81
+    ],
+    "take oil bottle counter": [
+        12,
+        40,
+        61,
+        21
+    ],
+    "pick up pot holder": [
+        32,
+        28,
+        62,
+        395
+    ],
+    "put cereal bag": [
+        6,
+        177,
+        25
+    ],
+    "add water": [
+        172,
+        43
+    ],
+    "throw shell": [
+        113,
+        69
+    ],
+    "take tablecloth": [
+        12,
+        274
+    ],
+    "pick up sauce bottle": [
+        32,
+        28,
+        81,
+        61
+    ],
+    "put jam glass cap counter": [
+        6,
+        54,
+        23,
+        205,
+        21
+    ],
+    "move kettle": [
+        85,
+        158
+    ],
+    "take dirty dish": [
+        12,
+        347,
+        74
+    ],
+    "stir pan fork partially": [
+        4,
+        8,
+        27,
+        15
+    ],
+    "take can": [
+        12,
+        88
+    ],
+    "cut chilli": [
+        10,
+        117
+    ],
+    "pick up small cup": [
+        32,
+        28,
+        369,
+        48
+    ],
+    "close jar": [
+        26,
+        208
+    ],
+    "put desk": [
+        6,
+        407
+    ],
+    "wipe off sink": [
+        70,
+        95,
+        56
+    ],
+    "dry cutting board": [
+        64,
+        97,
+        59
+    ],
+    "grab saucepan": [
+        186,
+        66
+    ],
+    "open lid": [
+        13,
+        77
+    ],
+    "put down potato": [
+        6,
+        57,
+        38
+    ],
+    "turn on light": [
+        41,
+        73,
+        306
+    ],
+    "put on glove": [
+        6,
+        73,
+        238
+    ],
+    "put oil": [
+        6,
+        40
+    ],
+    "put hummus": [
+        6,
+        321
+    ],
+    "pick up spoon": [
+        32,
+        28,
+        39
+    ],
+    "take clip counter": [
+        12,
+        286,
+        21
+    ],
+    "pour curry powder": [
+        18,
+        75,
+        351
+    ],
+    "take potato skin": [
+        12,
+        38,
+        76
+    ],
+    "walk fridge place counter place": [
+        92,
+        55,
+        34,
+        21,
+        34
+    ],
+    "mix mixture": [
+        17,
+        96
+    ],
+    "dry saucepan": [
+        64,
+        66
+    ],
+    "put celery": [
+        6,
+        290
+    ],
+    "put parsley": [
+        6,
+        150
+    ],
+    "put utensil": [
+        6,
+        345
+    ],
+    "slice olive": [
+        42,
+        86
+    ],
+    "place water": [
+        34,
+        43
+    ],
+    "put pasta": [
+        6,
+        58
+    ],
+    "fill jam jam glass bread": [
+        9,
+        54,
+        54,
+        23,
+        30
+    ],
+    "put down tablecloth": [
+        6,
+        57,
+        274
+    ],
+    "put in pan": [
+        6,
+        105,
+        8
+    ],
+    "cut cucumber": [
+        10,
+        135
+    ],
+    "open coffee": [
+        13,
+        68
+    ],
+    "rinse meat": [
+        14,
+        44
+    ],
+    "put down filter": [
+        6,
+        57,
+        168
+    ],
+    "fill jar": [
+        9,
+        208
+    ],
+    "open moka pot": [
+        13,
+        294,
+        62
+    ],
+    "put cloth": [
+        6,
+        119
+    ],
+    "put down cutting board": [
+        6,
+        57,
+        97,
+        59
+    ],
+    "throw fridge": [
+        113,
+        55
+    ],
+    "take peach": [
+        12,
+        118
+    ],
+    "put bread bag cupboard tl": [
+        6,
+        30,
+        25,
+        46,
+        127
+    ],
+    "place cheese": [
+        34,
+        82
+    ],
+    "wash pear": [
+        7,
+        254
+    ],
+    "set down coffee pot": [
+        194,
+        57,
+        68,
+        62
+    ],
+    "pick up liquid": [
+        32,
+        28,
+        217
+    ],
+    "put sauce": [
+        6,
+        81
+    ],
+    "rinse lid": [
+        14,
+        77
+    ],
+    "pour oil": [
+        18,
+        40
+    ],
+    "put 1 empty egg shell garbage": [
+        6,
+        102,
+        116,
+        35,
+        69,
+        163
+    ],
+    "take 1 bread plate": [
+        12,
+        102,
+        30,
+        29
+    ],
+    "put napkin": [
+        6,
+        182
+    ],
+    "take meat": [
+        12,
+        44
+    ],
+    "move sauce": [
+        85,
+        81
+    ],
+    "mix ingredient": [
+        17,
+        133
+    ],
+    "wipe off hand": [
+        70,
+        95,
+        50
+    ],
+    "open cookie": [
+        13,
+        281
+    ],
+    "move plate": [
+        85,
+        29
+    ],
+    "insert filter": [
+        298,
+        168
+    ],
+    "move fork": [
+        85,
+        27
+    ],
+    "cut pizza": [
+        10,
+        123
+    ],
+    "close cupboard tr": [
+        26,
+        46,
+        114
+    ],
+    "stir potato": [
+        4,
+        38
+    ],
+    "put down kettle": [
+        6,
+        57,
+        158
+    ],
+    "put butter spray can counter": [
+        6,
+        24,
+        99,
+        88,
+        21
+    ],
+    "close bottle": [
+        26,
+        61
+    ],
+    "pour up liquid": [
+        18,
+        28,
+        217
+    ],
+    "take beer": [
+        12,
+        364
+    ],
+    "put mushroom": [
+        6,
+        152
+    ],
+    "pick up oil": [
+        32,
+        28,
+        40
+    ],
+    "get bell pepper": [
+        93,
+        213,
+        83
+    ],
+    "put down onion": [
+        6,
+        57,
+        11
+    ],
+    "hang cloth": [
+        302,
+        119
+    ],
+    "rinse steel wool": [
+        14,
+        386,
+        389
+    ],
+    "place wooden spoon": [
+        34,
+        204,
+        39
+    ],
+    "place salad bowl": [
+        34,
+        52,
+        5
+    ],
+    "take mozzarella bag": [
+        12,
+        332,
+        25
+    ],
+    "take plate cupboard tl": [
+        12,
+        29,
+        46,
+        127
+    ],
+    "wash mint leaf": [
+        7,
+        349,
+        169
+    ],
+    "wipe hand": [
+        70,
+        50
+    ],
+    "remove film": [
+        67,
+        264
+    ],
+    "check coffee": [
+        180,
+        68
+    ],
+    "move bowl": [
+        85,
+        5
+    ],
+    "get salad leaf": [
+        93,
+        52,
+        169
+    ],
+    "put chopstick": [
+        6,
+        214
+    ],
+    "pick up shreddies": [
+        32,
+        28,
+        385
+    ],
+    "take salt shaker counter": [
+        12,
+        71,
+        121,
+        21
+    ],
+    "put down carrot": [
+        6,
+        57,
+        72
+    ],
+    "place rag": [
+        34,
+        154
+    ],
+    "put clip": [
+        6,
+        286
+    ],
+    "rinse bowl": [
+        14,
+        5
+    ],
+    "put down mixture": [
+        6,
+        57,
+        96
+    ],
+    "close cover": [
+        26,
+        215
+    ],
+    "dry salad bowl": [
+        64,
+        52,
+        5
+    ],
+    "pick up plastic": [
+        32,
+        28,
+        151
+    ],
+    "put down cereal": [
+        6,
+        57,
+        177
+    ],
+    "rinse spatula": [
+        14,
+        51
+    ],
+    "open pesto": [
+        13,
+        192
+    ],
+    "clean plate": [
+        16,
+        29
+    ],
+    "drink from glass": [
+        202,
+        331,
+        23
+    ],
+    "rinse mincing knife": [
+        14,
+        247,
+        49
+    ],
+    "put down oven glove": [
+        6,
+        57,
+        80,
+        238
+    ],
+    "rinse fork": [
+        14,
+        27
+    ],
+    "open coffee bag": [
+        13,
+        68,
+        25
+    ],
+    "slice carrot": [
+        42,
+        72
+    ],
+    "stir mug": [
+        4,
+        122
+    ],
+    "put packaging": [
+        6,
+        236
+    ],
+    "take cereal": [
+        12,
+        177
+    ],
+    "clean cloth": [
+        16,
+        119
+    ],
+    "check time": [
+        180,
+        261
+    ],
+    "take butter spray can cupboard bl": [
+        12,
+        24,
+        99,
+        88,
+        46,
+        120
+    ],
+    "wash teaspoon": [
+        7,
+        156
+    ],
+    "throw onion": [
+        113,
+        11
+    ],
+    "brush pot": [
+        179,
+        62
+    ],
+    "put down pan": [
+        6,
+        57,
+        8
+    ],
+    "slice cheese": [
+        42,
+        82
+    ],
+    "tap spoon": [
+        89,
+        39
+    ],
+    "set microwave": [
+        194,
+        228
+    ],
+    "lather filter": [
+        65,
+        168
+    ],
+    "put colander": [
+        6,
+        87
+    ],
+    "throw tea bag": [
+        113,
+        257,
+        25
+    ],
+    "place mug": [
+        34,
+        122
+    ],
+    "put sponge": [
+        6,
+        110
+    ],
+    "mix water": [
+        17,
+        43
+    ],
+    "remove waste": [
+        67,
+        253
+    ],
+    "squeeze detergent": [
+        139,
+        206
+    ],
+    "move tray": [
+        85,
+        276
+    ],
+    "close refrigerator": [
+        26,
+        361
+    ],
+    "empty sink": [
+        116,
+        56
+    ],
+    "rinse plate": [
+        14,
+        29
+    ],
+    "squeeze cloth": [
+        139,
+        119
+    ],
+    "wash colander": [
+        7,
+        87
+    ],
+    "stir pan spatula": [
+        4,
+        8,
+        51
+    ],
+    "mix meat": [
+        17,
+        44
+    ],
+    "spoon in mixture": [
+        39,
+        105,
+        96
+    ],
+    "spray degreaser": [
+        99,
+        309
+    ],
+    "put food": [
+        6,
+        20
+    ],
+    "put back lid": [
+        6,
+        406,
+        77
+    ],
+    "take peeler": [
+        12,
+        316
+    ],
+    "pick up bag": [
+        32,
+        28,
+        25
+    ],
+    "take tin lid": [
+        12,
+        231,
+        77
+    ],
+    "rinse saucepan": [
+        14,
+        66
+    ],
+    "pour detergent": [
+        18,
+        206
+    ],
+    "take oil bottle cap counter": [
+        12,
+        40,
+        61,
+        205,
+        21
+    ],
+    "stir egg": [
+        4,
+        35
+    ],
+    "turn down heat": [
+        41,
+        57,
+        248
+    ],
+    "move mixture": [
+        85,
+        96
+    ],
+    "take washing liquid": [
+        12,
+        313,
+        217
+    ],
+    "put fish": [
+        6,
+        134
+    ],
+    "take brownie box counter": [
+        12,
+        37,
+        78,
+        21
+    ],
+    "take frying pan": [
+        12,
+        132,
+        8
+    ],
+    "take scissors": [
+        12,
+        189
+    ],
+    "take egg": [
+        12,
+        35
+    ],
+    "close garbage": [
+        26,
+        163
+    ],
+    "put 1 egg shell counter": [
+        6,
+        102,
+        35,
+        69,
+        21
+    ],
+    "get egg": [
+        93,
+        35
+    ],
+    "fill butter butter spray can baking pan": [
+        9,
+        24,
+        24,
+        99,
+        88,
+        36,
+        8
+    ],
+    "put pizza slice": [
+        6,
+        123,
+        42
+    ],
+    "take measuring cup s cupboard tr": [
+        12,
+        63,
+        48,
+        100,
+        46,
+        114
+    ],
+    "put fork counter": [
+        6,
+        27,
+        21
+    ],
+    "switch on light": [
+        191,
+        73,
+        306
+    ],
+    "put jam glass fridge": [
+        6,
+        54,
+        23,
+        55
+    ],
+    "move salad bowl": [
+        85,
+        52,
+        5
+    ],
+    "take gravy": [
+        12,
+        381
+    ],
+    "wipe knife": [
+        70,
+        49
+    ],
+    "toss rind": [
+        311,
+        354
+    ],
+    "scoop rice": [
+        137,
+        79
+    ],
+    "move rice": [
+        85,
+        79
+    ],
+    "place cloth": [
+        34,
+        119
+    ],
+    "get salt": [
+        93,
+        71
+    ],
+    "fry egg": [
+        178,
+        35
+    ],
+    "squeeze excess water": [
+        139,
+        336,
+        43
+    ],
+    "turn gas": [
+        41,
+        241
+    ],
+    "rinse dish": [
+        14,
+        74
+    ],
+    "wash dish": [
+        7,
+        74
+    ],
+    "rinse spoon": [
+        14,
+        39
+    ],
+    "take pot holder": [
+        12,
+        62,
+        395
+    ],
+    "pull lid": [
+        333,
+        77
+    ],
+    "get meat": [
+        93,
+        44
+    ],
+    "inspect meat": [
+        266,
+        44
+    ],
+    "clean kitchen": [
+        16,
+        174
+    ],
+    "stir rice": [
+        4,
+        79
+    ],
+    "put box lid": [
+        6,
+        78,
+        77
+    ],
+    "fill salt salt shaker pan": [
+        9,
+        71,
+        71,
+        121,
+        8
+    ],
+    "put away fork": [
+        6,
+        222,
+        27
+    ],
+    "put egg box counter": [
+        6,
+        35,
+        78,
+        21
+    ],
+    "turn sausage": [
+        41,
+        124
+    ],
+    "move meat": [
+        85,
+        44
+    ],
+    "mix onion": [
+        17,
+        11
+    ],
+    "put down plastic wrap": [
+        6,
+        57,
+        151,
+        233
+    ],
+    "put down salad dressing": [
+        6,
+        57,
+        52,
+        391
+    ],
+    "put down saucer": [
+        6,
+        57,
+        197
+    ],
+    "put plastic cover": [
+        6,
+        151,
+        215
+    ],
+    "mix garlic": [
+        17,
+        60
+    ],
+    "mix pasta": [
+        17,
+        58
+    ],
+    "take dish": [
+        12,
+        74
+    ],
+    "put measuring cup l counter": [
+        6,
+        63,
+        48,
+        106,
+        21
+    ],
+    "put coffee machine": [
+        6,
+        68,
+        209
+    ],
+    "put spoon bowl": [
+        6,
+        39,
+        5
+    ],
+    "place mint leaf": [
+        34,
+        349,
+        169
+    ],
+    "knead dough": [
+        91,
+        19
+    ],
+    "turn on oven": [
+        41,
+        73,
+        80
+    ],
+    "wipe off spoon": [
+        70,
+        95,
+        39
+    ],
+    "adjust hop": [
+        176,
+        412
+    ],
+    "cut fish": [
+        10,
+        134
+    ],
+    "pour flour": [
+        18,
+        147
+    ],
+    "pick up carafe": [
+        32,
+        28,
+        245
+    ],
+    "chop spring onion": [
+        45,
+        148,
+        11
+    ],
+    "turn off flame": [
+        41,
+        95,
+        234
+    ],
+    "clean pan": [
+        16,
+        8
+    ],
+    "pick up chicken breast": [
+        32,
+        28,
+        111,
+        324
+    ],
+    "put corn": [
+        6,
+        330
+    ],
+    "close pasta bag": [
+        26,
+        58,
+        25
+    ],
+    "switch side": [
+        191,
+        250
+    ],
+    "take degreaser": [
+        12,
+        309
+    ],
+    "put tea bag": [
+        6,
+        257,
+        25
+    ],
+    "put down pizza": [
+        6,
+        57,
+        123
+    ],
+    "turn on washing machine": [
+        41,
+        73,
+        313,
+        209
+    ],
+    "put down glass": [
+        6,
+        57,
+        23
+    ],
+    "take glove": [
+        12,
+        238
+    ],
+    "put lunch box": [
+        6,
+        288,
+        78
+    ],
+    "look for drawer": [
+        170,
+        157,
+        84
+    ],
+    "take milk": [
+        12,
+        136
+    ],
+    "turn off oven": [
+        41,
+        95,
+        80
+    ],
+    "clean clothes": [
+        16,
+        221
+    ],
+    "open brownie box": [
+        13,
+        37,
+        78
+    ],
+    "chop pepper": [
+        45,
+        83
+    ],
+    "lather saucer": [
+        65,
+        197
+    ],
+    "pick up peeling": [
+        32,
+        28,
+        304
+    ],
+    "open cupboard tl": [
+        13,
+        46,
+        127
+    ],
+    "place colander": [
+        34,
+        87
+    ],
+    "throw lid": [
+        113,
+        77
+    ],
+    "spread flour": [
+        175,
+        147
+    ],
+    "take pan cupboard bl": [
+        12,
+        8,
+        46,
+        120
+    ],
+    "lather cup": [
+        65,
+        48
+    ],
+    "pick up paneer": [
+        32,
+        28,
+        162
+    ],
+    "rinse baking pan": [
+        14,
+        36,
+        8
+    ],
+    "shake bag": [
+        109,
+        25
+    ],
+    "scrub sink": [
+        296,
+        56
+    ],
+    "put rest": [
+        6,
+        282
+    ],
+    "put paper": [
+        6,
+        143
+    ],
+    "soap pan": [
+        130,
+        8
+    ],
+    "put down olive": [
+        6,
+        57,
+        86
+    ],
+    "lather bowl": [
+        65,
+        5
+    ],
+    "put jar": [
+        6,
+        208
+    ],
+    "cut garlic": [
+        10,
+        60
+    ],
+    "pick up chopping board": [
+        32,
+        28,
+        94,
+        59
+    ],
+    "open top": [
+        13,
+        188
+    ],
+    "pick up scissors": [
+        32,
+        28,
+        189
+    ],
+    "open moka": [
+        13,
+        294
+    ],
+    "pick up rusk": [
+        32,
+        28,
+        319
+    ],
+    "take napkin": [
+        12,
+        182
+    ],
+    "open sink": [
+        13,
+        56
+    ],
+    "take pan cupboard tm": [
+        12,
+        8,
+        46,
+        166
+    ],
+    "cut potato skin": [
+        10,
+        38,
+        76
+    ],
+    "pour bottle": [
+        18,
+        61
+    ],
+    "remove tomato": [
+        67,
+        53
+    ],
+    "take out courgette": [
+        12,
+        173,
+        115
+    ],
+    "pour chopped tomato": [
+        18,
+        225,
+        53
+    ],
+    "open can": [
+        13,
+        88
+    ],
+    "put silverware": [
+        6,
+        259
+    ],
+    "take out sauce": [
+        12,
+        173,
+        81
+    ],
+    "put bowl counter": [
+        6,
+        5,
+        21
+    ],
+    "pick up rice": [
+        32,
+        28,
+        79
+    ],
+    "rinse teaspoon": [
+        14,
+        156
+    ],
+    "slice bread": [
+        42,
+        30
+    ],
+    "wash stove": [
+        7,
+        90
+    ],
+    "put knife sink": [
+        6,
+        49,
+        56
+    ],
+    "shake water": [
+        109,
+        43
+    ],
+    "wash potato": [
+        7,
+        38
+    ],
+    "put almond": [
+        6,
+        405
+    ],
+    "open flour": [
+        13,
+        147
+    ],
+    "throw garbage": [
+        113,
+        163
+    ],
+    "take coffee pot": [
+        12,
+        68,
+        62
+    ],
+    "put pasta package": [
+        6,
+        58,
+        155
+    ],
+    "dry fork": [
+        64,
+        27
+    ],
+    "cut pear": [
+        10,
+        254
+    ],
+    "get spring onion": [
+        93,
+        148,
+        11
+    ],
+    "take pizza": [
+        12,
+        123
+    ],
+    "throw onion skin": [
+        113,
+        11,
+        76
+    ],
+    "get colander": [
+        93,
+        87
+    ],
+    "open chicken": [
+        13,
+        111
+    ],
+    "wash peeler": [
+        7,
+        316
+    ],
+    "remove skin": [
+        67,
+        76
+    ],
+    "close cupboard bl": [
+        26,
+        46,
+        120
+    ],
+    "mix flour": [
+        17,
+        147
+    ],
+    "place bag": [
+        34,
+        25
+    ],
+    "clean sink": [
+        16,
+        56
+    ],
+    "place mat": [
+        34,
+        413
+    ],
+    "get paper towel": [
+        93,
+        143,
+        125
+    ],
+    "grab lid": [
+        186,
+        77
+    ],
+    "take garbage": [
+        12,
+        163
+    ],
+    "put away soy sauce": [
+        6,
+        222,
+        305,
+        81
+    ],
+    "put bottle": [
+        6,
+        61
+    ],
+    "unfold table cloth": [
+        420,
+        128,
+        119
+    ],
+    "sweep floor": [
+        144,
+        142
+    ],
+    "get coffee": [
+        93,
+        68
+    ],
+    "put filter": [
+        6,
+        168
+    ],
+    "wash scissors": [
+        7,
+        189
+    ],
+    "throw water": [
+        113,
+        43
+    ],
+    "turn bread": [
+        41,
+        30
+    ],
+    "pick up coffee pot": [
+        32,
+        28,
+        68,
+        62
+    ],
+    "spoon bowl": [
+        39,
+        5
+    ],
+    "put milk container": [
+        6,
+        136,
+        131
+    ],
+    "cut meat": [
+        10,
+        44
+    ],
+    "close oregano": [
+        26,
+        159
+    ],
+    "switch on heat": [
+        191,
+        73,
+        248
+    ],
+    "rinse strainer": [
+        14,
+        242
+    ],
+    "squeeze into patty": [
+        139,
+        165,
+        260
+    ],
+    "put pot": [
+        6,
+        62
+    ],
+    "take 1 egg shell counter": [
+        12,
+        102,
+        35,
+        69,
+        21
+    ],
+    "put spade": [
+        6,
+        251
+    ],
+    "switch on hob": [
+        191,
+        73,
+        108
+    ],
+    "put 1 empty egg shell sink": [
+        6,
+        102,
+        116,
+        35,
+        69,
+        56
+    ],
+    "check water": [
+        180,
+        43
+    ],
+    "slice chicken": [
+        42,
+        111
+    ],
+    "grab lunch box": [
+        186,
+        288,
+        78
+    ],
+    "wipe sink": [
+        70,
+        56
+    ],
+    "wash knife": [
+        7,
+        49
+    ],
+    "put down mug": [
+        6,
+        57,
+        122
+    ],
+    "place sponge": [
+        34,
+        110
+    ],
+    "open cupboard": [
+        13,
+        46
+    ],
+    "rinse salad bowl": [
+        14,
+        52,
+        5
+    ],
+    "put on plate": [
+        6,
+        73,
+        29
+    ],
+    "place pesto bottle": [
+        34,
+        192,
+        61
+    ],
+    "stir food": [
+        4,
+        20
+    ],
+    "fill oil oil bottle measuring cup s": [
+        9,
+        40,
+        40,
+        61,
+        63,
+        48,
+        100
+    ],
+    "rinse sink": [
+        14,
+        56
+    ],
+    "put bag": [
+        6,
+        25
+    ],
+    "close bread bag partially": [
+        26,
+        30,
+        25,
+        15
+    ],
+    "wash aubergine": [
+        7,
+        195
+    ],
+    "put kettle": [
+        6,
+        158
+    ],
+    "get towel": [
+        93,
+        125
+    ],
+    "pour pasta": [
+        18,
+        58
+    ],
+    "open milk": [
+        13,
+        136
+    ],
+    "spread dough": [
+        175,
+        19
+    ],
+    "put soap": [
+        6,
+        130
+    ],
+    "place spinach leaf": [
+        34,
+        370,
+        169
+    ],
+    "turn down hob": [
+        41,
+        57,
+        108
+    ],
+    "chop cucumber": [
+        45,
+        135
+    ],
+    "get moka": [
+        93,
+        294
+    ],
+    "put carafe": [
+        6,
+        245
+    ],
+    "clean hand": [
+        16,
+        50
+    ],
+    "close bread": [
+        26,
+        30
+    ],
+    "start microwave": [
+        327,
+        228
+    ],
+    "put measuring cup s counter": [
+        6,
+        63,
+        48,
+        100,
+        21
+    ],
+    "put blueberry": [
+        6,
+        280
+    ],
+    "open grape": [
+        13,
+        164
+    ],
+    "put down lid": [
+        6,
+        57,
+        77
+    ],
+    "put bowl sink": [
+        6,
+        5,
+        56
+    ],
+    "turn on heater": [
+        41,
+        73,
+        129
+    ],
+    "take jam glass fridge": [
+        12,
+        54,
+        23,
+        55
+    ],
+    "wash plate": [
+        7,
+        29
+    ],
+    "move napkin": [
+        85,
+        182
+    ],
+    "open honey": [
+        13,
+        396
+    ],
+    "move coffee pot": [
+        85,
+        68,
+        62
+    ],
+    "rinse grater": [
+        14,
+        212
+    ],
+    "grate carrot": [
+        185,
+        72
+    ],
+    "walk counter place fridge place": [
+        92,
+        21,
+        34,
+        55,
+        34
+    ],
+    "close oil": [
+        26,
+        40
+    ],
+    "remove cling film": [
+        67,
+        272,
+        264
+    ],
+    "brush flour": [
+        179,
+        147
+    ],
+    "move cutting board": [
+        85,
+        97,
+        59
+    ],
+    "clean stove": [
+        16,
+        90
+    ],
+    "shake pot": [
+        109,
+        62
+    ],
+    "wash cutting board": [
+        7,
+        97,
+        59
+    ],
+    "pick up colander": [
+        32,
+        28,
+        87
+    ],
+    "empty bag": [
+        116,
+        25
+    ],
+    "wash mug": [
+        7,
+        122
+    ],
+    "flip pan": [
+        141,
+        8
+    ],
+    "set time": [
+        194,
+        261
+    ],
+    "pour chicken": [
+        18,
+        111
+    ],
+    "soap glass": [
+        130,
+        23
+    ],
+    "empty bottle": [
+        116,
+        61
+    ],
+    "drain potato": [
+        210,
+        38
+    ],
+    "rinse milk bottle": [
+        14,
+        136,
+        61
+    ],
+    "get glass bowl": [
+        93,
+        23,
+        5
+    ],
+    "wash pot": [
+        7,
+        62
+    ],
+    "dry lid": [
+        64,
+        77
+    ],
+    "take milk container": [
+        12,
+        136,
+        131
+    ],
+    "close oven": [
+        26,
+        80
+    ],
+    "open olive": [
+        13,
+        86
+    ],
+    "wash chopstick": [
+        7,
+        214
+    ],
+    "take pan stove": [
+        12,
+        8,
+        90
+    ],
+    "open jam glass": [
+        13,
+        54,
+        23
+    ],
+    "put fork": [
+        6,
+        27
+    ],
+    "put wooden spoon": [
+        6,
+        204,
+        39
+    ],
+    "take tea pack": [
+        12,
+        257,
+        190
+    ],
+    "crack egg": [
+        346,
+        35
+    ],
+    "open cheese": [
+        13,
+        82
+    ],
+    "put brownie bag sink": [
+        6,
+        37,
+        25,
+        56
+    ],
+    "pour kettle": [
+        18,
+        158
+    ],
+    "put down oil": [
+        6,
+        57,
+        40
+    ],
+    "take baking pan oven": [
+        12,
+        36,
+        8,
+        80
+    ],
+    "wash bell pepper": [
+        7,
+        213,
+        83
+    ],
+    "scoop coffee": [
+        137,
+        68
+    ],
+    "wash tap": [
+        7,
+        89
+    ],
+    "take packet": [
+        12,
+        268
+    ],
+    "put spice": [
+        6,
+        112
+    ],
+    "put bin": [
+        6,
+        252
+    ],
+    "take courgette": [
+        12,
+        115
+    ],
+    "wipe cooker": [
+        70,
+        104
+    ],
+    "stir spoon": [
+        4,
+        39
+    ],
+    "move sausage": [
+        85,
+        124
+    ],
+    "put brownie bag counter": [
+        6,
+        37,
+        25,
+        21
+    ],
+    "fill bottle": [
+        9,
+        61
+    ],
+    "lather soap cup": [
+        65,
+        130,
+        48
+    ],
+    "toss paper": [
+        311,
+        143
+    ],
+    "sprinkle sweetcorn": [
+        107,
+        239
+    ],
+    "put jug": [
+        6,
+        200
+    ],
+    "put fork plate": [
+        6,
+        27,
+        29
+    ],
+    "rinse scissors": [
+        14,
+        189
+    ],
+    "put measuring cup s sink": [
+        6,
+        63,
+        48,
+        100,
+        56
+    ],
+    "serve food": [
+        224,
+        20
+    ],
+    "throw plastic bag": [
+        113,
+        151,
+        25
+    ],
+    "clean filter": [
+        16,
+        168
+    ],
+    "take lettuce": [
+        12,
+        98
+    ],
+    "pick up lettuce": [
+        32,
+        28,
+        98
+    ],
+    "dry v60": [
+        64,
+        285
+    ],
+    "shake hand": [
+        109,
+        50
+    ],
+    "cut lemon": [
+        10,
+        187
+    ],
+    "take cupboard": [
+        12,
+        46
+    ],
+    "turn on gas": [
+        41,
+        73,
+        241
+    ],
+    "get yoghurt": [
+        93,
+        235
+    ],
+    "take jam glass&jam glass cap counter": [
+        12,
+        54,
+        411,
+        23,
+        205,
+        21
+    ],
+    "sprinkle salt": [
+        107,
+        71
+    ],
+    "turn off heat": [
+        41,
+        95,
+        248
+    ],
+    "take plastic bag": [
+        12,
+        151,
+        25
+    ],
+    "open cupboard bl": [
+        13,
+        46,
+        120
+    ],
+    "throw bin": [
+        113,
+        252
+    ],
+    "wipe rag": [
+        70,
+        154
+    ],
+    "squeeze rag": [
+        139,
+        154
+    ],
+    "close pasta package": [
+        26,
+        58,
+        155
+    ],
+    "take container": [
+        12,
+        131
+    ],
+    "put down flour": [
+        6,
+        57,
+        147
+    ],
+    "chop onion": [
+        45,
+        11
+    ],
+    "take lemon": [
+        12,
+        187
+    ],
+    "dry knife": [
+        64,
+        49
+    ],
+    "take cup": [
+        12,
+        48
+    ],
+    "pick up stock": [
+        32,
+        28,
+        146
+    ],
+    "take oven glove": [
+        12,
+        80,
+        238
+    ],
+    "put plastic bag": [
+        6,
+        151,
+        25
+    ],
+    "put down salt": [
+        6,
+        57,
+        71
+    ],
+    "put peanut butter glass cap counter": [
+        6,
+        47,
+        24,
+        23,
+        205,
+        21
+    ],
+    "put knife": [
+        6,
+        49
+    ],
+    "take measuring cup l cupboard tr": [
+        12,
+        63,
+        48,
+        106,
+        46,
+        114
+    ],
+    "pick up oven glove": [
+        32,
+        28,
+        80,
+        238
+    ],
+    "open coffee maker": [
+        13,
+        68,
+        227
+    ],
+    "take cutting board": [
+        12,
+        97,
+        59
+    ],
+    "put curry": [
+        6,
+        75
+    ],
+    "remove glove": [
+        67,
+        238
+    ],
+    "spoon food": [
+        39,
+        20
+    ],
+    "rinse hand": [
+        14,
+        50
+    ],
+    "get fork": [
+        93,
+        27
+    ],
+    "remove rubber band": [
+        67,
+        368,
+        363
+    ],
+    "put egg": [
+        6,
+        35
+    ],
+    "put waste": [
+        6,
+        253
+    ],
+    "pick up detergent": [
+        32,
+        28,
+        206
+    ],
+    "spoon sugar": [
+        39,
+        216
+    ],
+    "pick up pasta": [
+        32,
+        28,
+        58
+    ],
+    "pick up rubbish": [
+        32,
+        28,
+        232
+    ],
+    "scrape chopping board": [
+        283,
+        94,
+        59
+    ],
+    "taste rice": [
+        271,
+        79
+    ],
+    "dry floor": [
+        64,
+        142
+    ],
+    "take fork": [
+        12,
+        27
+    ],
+    "open cheese pack": [
+        13,
+        82,
+        190
+    ],
+    "open peanut butter glass": [
+        13,
+        47,
+        24,
+        23
+    ],
+    "stir water": [
+        4,
+        43
+    ],
+    "fill butter butter spray can baking pan partially": [
+        9,
+        24,
+        24,
+        99,
+        88,
+        36,
+        8,
+        15
+    ],
+    "pour soy milk": [
+        18,
+        305,
+        136
+    ],
+    "rinse container": [
+        14,
+        131
+    ],
+    "put down spatula": [
+        6,
+        57,
+        51
+    ],
+    "put in sugar": [
+        6,
+        105,
+        216
+    ],
+    "put pepper shaker&salt shaker cupboard tl": [
+        6,
+        83,
+        340,
+        121,
+        46,
+        127
+    ],
+    "close washing machine": [
+        26,
+        313,
+        209
+    ],
+    "put clothes": [
+        6,
+        221
+    ],
+    "place food processor": [
+        34,
+        20,
+        278
+    ],
+    "check heat": [
+        180,
+        248
+    ],
+    "fill eggs bowl pan": [
+        9,
+        103,
+        5,
+        8
+    ],
+    "wash ginger piece": [
+        7,
+        211,
+        415
+    ],
+    "put water filter": [
+        6,
+        43,
+        168
+    ],
+    "pick up fork": [
+        32,
+        28,
+        27
+    ],
+    "place plate": [
+        34,
+        29
+    ],
+    "lather cutting board": [
+        65,
+        97,
+        59
+    ],
+    "take paper": [
+        12,
+        143
+    ],
+    "pick up kettle": [
+        32,
+        28,
+        158
+    ],
+    "grab cutlery": [
+        186,
+        140
+    ],
+    "open wrap": [
+        13,
+        233
+    ],
+    "take 1 paper towel counter": [
+        12,
+        102,
+        143,
+        125,
+        21
+    ],
+    "put down dish": [
+        6,
+        57,
+        74
+    ],
+    "put down tray": [
+        6,
+        57,
+        276
+    ],
+    "put peeling": [
+        6,
+        304
+    ],
+    "take cookie": [
+        12,
+        281
+    ],
+    "close cheese pack": [
+        26,
+        82,
+        190
+    ],
+    "take out spoon": [
+        12,
+        173,
+        39
+    ],
+    "get kitchen towel": [
+        93,
+        174,
+        125
+    ],
+    "open vinegar": [
+        13,
+        320
+    ],
+    "wash rag": [
+        7,
+        154
+    ],
+    "fill mug": [
+        9,
+        122
+    ],
+    "stir bowl fork partially": [
+        4,
+        5,
+        27,
+        15
+    ],
+    "rinse saucer": [
+        14,
+        197
+    ],
+    "close cupboard": [
+        26,
+        46
+    ],
+    "close coffee maker": [
+        26,
+        68,
+        227
+    ],
+    "open salt": [
+        13,
+        71
+    ],
+    "wash strainer": [
+        7,
+        242
+    ],
+    "put plate counter": [
+        6,
+        29,
+        21
+    ],
+    "fill saucepan": [
+        9,
+        66
+    ],
+    "throw paper towel": [
+        113,
+        143,
+        125
+    ],
+    "close package": [
+        26,
+        155
+    ],
+    "put down coffee": [
+        6,
+        57,
+        68
+    ],
+    "take spoon": [
+        12,
+        39
+    ],
+    "take whisk counter": [
+        12,
+        33,
+        21
+    ],
+    "pour egg": [
+        18,
+        35
+    ],
+    "wear apron": [
+        220,
+        240
+    ],
+    "open bin": [
+        13,
+        252
+    ],
+    "wash table cloth": [
+        7,
+        128,
+        119
+    ],
+    "cut tomato": [
+        10,
+        53
+    ],
+    "put 2 bread plate": [
+        6,
+        171,
+        30,
+        29
+    ],
+    "pick up soap": [
+        32,
+        28,
+        130
+    ],
+    "grab onion": [
+        186,
+        11
+    ],
+    "grind coffee": [
+        203,
+        68
+    ],
+    "put bacon": [
+        6,
+        277
+    ],
+    "take banana": [
+        12,
+        199
+    ],
+    "get garlic": [
+        93,
+        60
+    ],
+    "flush tap": [
+        410,
+        89
+    ],
+    "wash my hand": [
+        7,
+        322,
+        50
+    ],
+    "put salad": [
+        6,
+        52
+    ],
+    "fill up kettle": [
+        9,
+        28,
+        158
+    ],
+    "pour sugar": [
+        18,
+        216
+    ],
+    "stir bowl whisk partially": [
+        4,
+        5,
+        33,
+        15
+    ],
+    "pour water": [
+        18,
+        43
+    ],
+    "drain rice": [
+        210,
+        79
+    ],
+    "cut banana": [
+        10,
+        199
+    ],
+    "put down saucepan": [
+        6,
+        57,
+        66
+    ],
+    "remove coffee": [
+        67,
+        68
+    ],
+    "rub hand": [
+        334,
+        50
+    ],
+    "arrange pan": [
+        243,
+        8
+    ],
+    "put creme fraiche": [
+        6,
+        291,
+        293
+    ],
+    "open bottle": [
+        13,
+        61
+    ],
+    "fold filter": [
+        193,
+        168
+    ],
+    "pour olive oil": [
+        18,
+        86,
+        40
+    ],
+    "fill pepper pepper shaker bowl": [
+        9,
+        83,
+        83,
+        121,
+        5
+    ],
+    "put oil bottle counter": [
+        6,
+        40,
+        61,
+        21
+    ],
+    "put down salad bowl": [
+        6,
+        57,
+        52,
+        5
+    ],
+    "pick up kitchen roll": [
+        32,
+        28,
+        174,
+        101
+    ],
+    "pour tomato": [
+        18,
+        53
+    ],
+    "rinse utensil": [
+        14,
+        345
+    ],
+    "turn off stove": [
+        41,
+        95,
+        90
+    ],
+    "grab pan": [
+        186,
+        8
+    ],
+    "put peanut butter glass counter": [
+        6,
+        47,
+        24,
+        23,
+        21
+    ],
+    "pick up mixture": [
+        32,
+        28,
+        96
+    ],
+    "take package": [
+        12,
+        155
+    ],
+    "move bin": [
+        85,
+        252
+    ],
+    "put clip counter": [
+        6,
+        286,
+        21
+    ],
+    "dry cup": [
+        64,
+        48
+    ],
+    "take spice": [
+        12,
+        112
+    ],
+    "clean table": [
+        16,
+        128
+    ],
+    "put cucumber": [
+        6,
+        135
+    ],
+    "close cereal box": [
+        26,
+        177,
+        78
+    ],
+    "sprinkle oregano": [
+        107,
+        159
+    ],
+    "take 2 bread bread bag": [
+        12,
+        171,
+        30,
+        30,
+        25
+    ],
+    "place in bowl": [
+        34,
+        105,
+        5
+    ],
+    "clean colander": [
+        16,
+        87
+    ],
+    "put whisk sink": [
+        6,
+        33,
+        56
+    ],
+    "dry spoon": [
+        64,
+        39
+    ],
+    "wash mushroom": [
+        7,
+        152
+    ],
+    "pour food": [
+        18,
+        20
+    ],
+    "get avocado": [
+        93,
+        373
+    ],
+    "clean dish": [
+        16,
+        74
+    ],
+    "break egg": [
+        314,
+        35
+    ],
+    "put down pepper": [
+        6,
+        57,
+        83
+    ],
+    "put scissors drawer": [
+        6,
+        189,
+        84
+    ],
+    "pick up pepper": [
+        32,
+        28,
+        83
+    ],
+    "close oil bottle": [
+        26,
+        40,
+        61
+    ],
+    "take salad": [
+        12,
+        52
+    ],
+    "turn potato": [
+        41,
+        38
+    ],
+    "take bread bag fridge": [
+        12,
+        30,
+        25,
+        55
+    ],
+    "mix oil": [
+        17,
+        40
+    ],
+    "put potato": [
+        6,
+        38
+    ],
+    "put down cereal box": [
+        6,
+        57,
+        177,
+        78
+    ],
+    "fry tomato": [
+        178,
+        53
+    ],
+    "scrub tap": [
+        296,
+        89
+    ],
+    "close trash": [
+        26,
+        267
+    ],
+    "place glass": [
+        34,
+        23
+    ],
+    "put bread": [
+        6,
+        30
+    ],
+    "rinse cutlery": [
+        14,
+        140
+    ],
+    "place cutting board": [
+        34,
+        97,
+        59
+    ],
+    "take tea towel": [
+        12,
+        257,
+        125
+    ],
+    "remove plastic cover": [
+        67,
+        151,
+        215
+    ],
+    "put measuring cup l cupboard tr": [
+        6,
+        63,
+        48,
+        106,
+        46,
+        114
+    ],
+    "place pot": [
+        34,
+        62
+    ],
+    "adjust temperature": [
+        176,
+        230
+    ],
+    "close bread bag": [
+        26,
+        30,
+        25
+    ],
+    "get plastic bag": [
+        93,
+        151,
+        25
+    ],
+    "add cooking time": [
+        172,
+        329,
+        261
+    ],
+    "wear glove": [
+        220,
+        238
+    ],
+    "close trash bin": [
+        26,
+        267,
+        252
+    ],
+    "place in cupboard": [
+        34,
+        105,
+        46
+    ],
+    "insert coffee": [
+        298,
+        68
+    ],
+    "close freezer drawer": [
+        26,
+        287,
+        84
+    ],
+    "open water bottle": [
+        13,
+        43,
+        61
+    ],
+    "place potato peeler": [
+        34,
+        38,
+        316
+    ],
+    "put brush": [
+        6,
+        179
+    ],
+    "empty bowl": [
+        116,
+        5
+    ],
+    "push button": [
+        399,
+        343
+    ],
+    "place fork": [
+        34,
+        27
+    ],
+    "get spoon": [
+        93,
+        39
+    ],
+    "rinse wooden spoon": [
+        14,
+        204,
+        39
+    ],
+    "take salt shaker cupboard tl": [
+        12,
+        71,
+        121,
+        46,
+        127
+    ],
+    "grab oregano": [
+        186,
+        159
+    ],
+    "put spoon": [
+        6,
+        39
+    ],
+    "move knife": [
+        85,
+        49
+    ],
+    "rinse colander": [
+        14,
+        87
+    ],
+    "pick up wok": [
+        32,
+        28,
+        307
+    ],
+    "wash saucepan": [
+        7,
+        66
+    ],
+    "wash tong": [
+        7,
+        275
+    ],
+    "put minced meat": [
+        6,
+        303,
+        44
+    ],
+    "pour liquid": [
+        18,
+        217
+    ],
+    "put bread bag counter": [
+        6,
+        30,
+        25,
+        21
+    ],
+    "pick up bowl": [
+        32,
+        28,
+        5
+    ],
+    "get plastic wrap": [
+        93,
+        151,
+        233
+    ],
+    "rinse silverware": [
+        14,
+        259
+    ],
+    "close cabinet": [
+        26,
+        263
+    ],
+    "seal food container": [
+        339,
+        20,
+        131
+    ],
+    "stir pasta": [
+        4,
+        58
+    ],
+    "cut onion": [
+        10,
+        11
+    ],
+    "fill peanut butter peanut butter glass bread": [
+        9,
+        47,
+        24,
+        47,
+        24,
+        23,
+        30
+    ],
+    "put turmeric": [
+        6,
+        328
+    ],
+    "put away knife": [
+        6,
+        222,
+        49
+    ],
+    "move glass": [
+        85,
+        23
+    ],
+    "rinse cup": [
+        14,
+        48
+    ],
+    "rinse basket": [
+        14,
+        255
+    ],
+    "put down bag": [
+        6,
+        57,
+        25
+    ],
+    "clean cooker": [
+        16,
+        104
+    ],
+    "compress meat": [
+        246,
+        44
+    ],
+    "get herb": [
+        93,
+        394
+    ],
+    "put in bowl": [
+        6,
+        105,
+        5
+    ],
+    "scrape rice": [
+        283,
+        79
+    ],
+    "throw away skin": [
+        113,
+        222,
+        76
+    ],
+    "take bowl cupboard tr": [
+        12,
+        5,
+        46,
+        114
+    ],
+    "put down cup": [
+        6,
+        57,
+        48
+    ],
+    "put meat": [
+        6,
+        44
+    ],
+    "grab coffee": [
+        186,
+        68
+    ],
+    "throw waste": [
+        113,
+        253
+    ],
+    "put down detergent": [
+        6,
+        57,
+        206
+    ],
+    "cut potato": [
+        10,
+        38
+    ],
+    "put butter spray cap counter": [
+        6,
+        24,
+        99,
+        205,
+        21
+    ],
+    "taste meat": [
+        271,
+        44
+    ],
+    "take waste": [
+        12,
+        253
+    ],
+    "throw package": [
+        113,
+        155
+    ],
+    "pick up lunch box": [
+        32,
+        28,
+        288,
+        78
+    ],
+    "stir pan": [
+        4,
+        8
+    ],
+    "move spoon": [
+        85,
+        39
+    ],
+    "pick up water": [
+        32,
+        28,
+        43
+    ],
+    "take off glove": [
+        12,
+        95,
+        238
+    ],
+    "put towel": [
+        6,
+        125
+    ],
+    "stir sauce": [
+        4,
+        81
+    ],
+    "fill eggs pan plate": [
+        9,
+        103,
+        8,
+        29
+    ],
+    "pour salt": [
+        18,
+        71
+    ],
+    "put into pan": [
+        6,
+        165,
+        8
+    ],
+    "get cover": [
+        93,
+        215
+    ],
+    "remove cover": [
+        67,
+        215
+    ],
+    "open cooker": [
+        13,
+        104
+    ],
+    "open door": [
+        13,
+        183
+    ],
+    "push drawer": [
+        399,
+        84
+    ],
+    "mix in curry": [
+        17,
+        105,
+        75
+    ],
+    "throw salad": [
+        113,
+        52
+    ],
+    "throw trash": [
+        113,
+        267
+    ],
+    "shake cloth": [
+        109,
+        119
+    ],
+    "get spice": [
+        93,
+        112
+    ],
+    "take pan counter": [
+        12,
+        8,
+        21
+    ],
+    "remove food residue": [
+        67,
+        20,
+        249
+    ],
+    "wash can": [
+        7,
+        88
+    ],
+    "take aubergine": [
+        12,
+        195
+    ],
+    "take oil bottle cupboard br": [
+        12,
+        40,
+        61,
+        46,
+        149
+    ],
+    "take jam glass cap counter": [
+        12,
+        54,
+        23,
+        205,
+        21
+    ],
+    "take tray": [
+        12,
+        276
+    ],
+    "take knife plate": [
+        12,
+        49,
+        29
+    ],
+    "dry plate": [
+        64,
+        29
+    ],
+    "put pepper shaker cupboard tl": [
+        6,
+        83,
+        121,
+        46,
+        127
+    ],
+    "toss salad": [
+        311,
+        52
+    ],
+    "pick up frying pan": [
+        32,
+        28,
+        132,
+        8
+    ],
+    "spray cleanser": [
+        99,
+        357
+    ],
+    "close salt box": [
+        26,
+        71,
+        78
+    ],
+    "wipe surface": [
+        70,
+        138
+    ],
+    "wash lettuce": [
+        7,
+        98
+    ],
+    "stir spatula": [
+        4,
+        51
+    ],
+    "put lid": [
+        6,
+        77
+    ],
+    "put on detergent": [
+        6,
+        73,
+        206
+    ],
+    "stir ingredient": [
+        4,
+        133
+    ],
+    "drink water": [
+        202,
+        43
+    ],
+    "pick up lid": [
+        32,
+        28,
+        77
+    ],
+    "roll dough": [
+        101,
+        19
+    ],
+    "take cloth": [
+        12,
+        119
+    ],
+    "scoop kiwi": [
+        137,
+        167
+    ],
+    "turn on kettle": [
+        41,
+        73,
+        158
+    ],
+    "mix yoghurt": [
+        17,
+        235
+    ],
+    "wash spatula": [
+        7,
+        51
+    ],
+    "rinse potato peeler": [
+        14,
+        38,
+        316
+    ],
+    "take chicken": [
+        12,
+        111
+    ],
+    "turn on cooker": [
+        41,
+        73,
+        104
+    ],
+    "wash tomato": [
+        7,
+        53
+    ],
+    "open pot": [
+        13,
+        62
+    ],
+    "rinse pitcher": [
+        14,
+        273
+    ],
+    "put 1 paper towel counter": [
+        6,
+        102,
+        143,
+        125,
+        21
+    ],
+    "get chopstick": [
+        93,
+        214
+    ],
+    "clean counter top": [
+        16,
+        21,
+        188
+    ],
+    "wash ladle": [
+        7,
+        161
+    ],
+    "take cling film": [
+        12,
+        272,
+        264
+    ],
+    "close drawer": [
+        26,
+        84
+    ],
+    "stir pan spatula partially": [
+        4,
+        8,
+        51,
+        15
+    ],
+    "turn off tap": [
+        41,
+        95,
+        89
+    ],
+    "pick up knife": [
+        32,
+        28,
+        49
+    ],
+    "put teaspoon": [
+        6,
+        156
+    ],
+    "take towel fridge counter": [
+        12,
+        125,
+        55,
+        21
+    ],
+    "put glass": [
+        6,
+        23
+    ],
+    "put sweet corn": [
+        6,
+        403,
+        330
+    ],
+    "flatten bottle": [
+        376,
+        61
+    ],
+    "pour raisin": [
+        18,
+        352
+    ],
+    "put jam glass&peanut butter glass counter": [
+        6,
+        54,
+        358,
+        24,
+        23,
+        21
+    ],
+    "wash frying pan": [
+        7,
+        132,
+        8
+    ],
+    "get food processor": [
+        93,
+        20,
+        278
+    ],
+    "cut peach": [
+        10,
+        118
+    ],
+    "fill pan": [
+        9,
+        8
+    ],
+    "pick up onion peel": [
+        32,
+        28,
+        11,
+        31
+    ],
+    "take lid": [
+        12,
+        77
+    ],
+    "pick up carrot": [
+        32,
+        28,
+        72
+    ],
+    "put down carafe": [
+        6,
+        57,
+        245
+    ],
+    "put brownie box counter": [
+        6,
+        37,
+        78,
+        21
+    ],
+    "close cheese bag": [
+        26,
+        82,
+        25
+    ],
+    "fill oil pan sink": [
+        9,
+        40,
+        8,
+        56
+    ],
+    "get spade": [
+        93,
+        251
+    ],
+    "open mozzarella package": [
+        13,
+        332,
+        155
+    ],
+    "close lid": [
+        26,
+        77
+    ],
+    "put down rag": [
+        6,
+        57,
+        154
+    ],
+    "put down spoon": [
+        6,
+        57,
+        39
+    ],
+    "put down silverware": [
+        6,
+        57,
+        259
+    ],
+    "put in oil": [
+        6,
+        105,
+        40
+    ],
+    "put down cutlery": [
+        6,
+        57,
+        140
+    ],
+    "pick up salad": [
+        32,
+        28,
+        52
+    ],
+    "lather teaspoon": [
+        65,
+        156
+    ],
+    "close cupboard br": [
+        26,
+        46,
+        149
+    ],
+    "place tortilla": [
+        34,
+        126
+    ],
+    "put dish": [
+        6,
+        74
+    ],
+    "take out pan": [
+        12,
+        173,
+        8
+    ],
+    "throw skin": [
+        113,
+        76
+    ],
+    "rinse jar": [
+        14,
+        208
+    ],
+    "clean bowl": [
+        16,
+        5
+    ],
+    "put 1 bread bread": [
+        6,
+        102,
+        30,
+        30
+    ],
+    "lather pitcher": [
+        65,
+        273
+    ],
+    "open olive oil": [
+        13,
+        86,
+        40
+    ],
+    "take bottle": [
+        12,
+        61
+    ],
+    "put lemon": [
+        6,
+        187
+    ],
+    "open cereal box": [
+        13,
+        177,
+        78
+    ],
+    "put brownie box sink": [
+        6,
+        37,
+        78,
+        56
+    ],
+    "search for plate": [
+        269,
+        157,
+        29
+    ],
+    "close drawer partially": [
+        26,
+        84,
+        15
+    ],
+    "put scissors": [
+        6,
+        189
+    ],
+    "pick up filter": [
+        32,
+        28,
+        168
+    ],
+    "slice onion": [
+        42,
+        11
+    ],
+    "take hummus": [
+        12,
+        321
+    ],
+    "rinse coffee maker": [
+        14,
+        68,
+        227
+    ],
+    "pick up cucumber": [
+        32,
+        28,
+        135
+    ],
+    "throw box": [
+        113,
+        78
+    ],
+    "place meat": [
+        34,
+        44
+    ],
+    "slice cucumber": [
+        42,
+        135
+    ],
+    "take scissors counter": [
+        12,
+        189,
+        21
+    ],
+    "cut bread": [
+        10,
+        30
+    ],
+    "get small bowl": [
+        93,
+        369,
+        5
+    ],
+    "turn up heat": [
+        41,
+        28,
+        248
+    ],
+    "throw cover": [
+        113,
+        215
+    ],
+    "pick up ginger": [
+        32,
+        28,
+        211
+    ],
+    "put 1 empty egg shell counter": [
+        6,
+        102,
+        116,
+        35,
+        69,
+        21
+    ],
+    "put fork bowl": [
+        6,
+        27,
+        5
+    ],
+    "open salad": [
+        13,
+        52
+    ],
+    "put down brush": [
+        6,
+        57,
+        179
+    ],
+    "grab bowl": [
+        186,
+        5
+    ],
+    "turn off hob": [
+        41,
+        95,
+        108
+    ],
+    "soap coffee cup": [
+        130,
+        68,
+        48
+    ],
+    "rinse sponge": [
+        14,
+        110
+    ],
+    "open cheese bag": [
+        13,
+        82,
+        25
+    ],
+    "dry tupperware": [
+        64,
+        153
+    ],
+    "mix pan": [
+        17,
+        8
+    ],
+    "take baking pan cupboard bl": [
+        12,
+        36,
+        8,
+        46,
+        120
+    ],
+    "take mushroom": [
+        12,
+        152
+    ],
+    "place container": [
+        34,
+        131
+    ],
+    "take rag": [
+        12,
+        154
+    ],
+    "open tortilla pack": [
+        13,
+        126,
+        190
+    ],
+    "check coffee pot": [
+        180,
+        68,
+        62
+    ],
+    "wash v60": [
+        7,
+        285
+    ],
+    "lather glass": [
+        65,
+        23
+    ],
+    "close bin": [
+        26,
+        252
+    ],
+    "throw napkin": [
+        113,
+        182
+    ],
+    "peel garlic": [
+        31,
+        60
+    ],
+    "take pepper": [
+        12,
+        83
+    ],
+    "take glass": [
+        12,
+        23
+    ],
+    "take flour": [
+        12,
+        147
+    ],
+    "open oven": [
+        13,
+        80
+    ],
+    "pick up dough": [
+        32,
+        28,
+        19
+    ],
+    "pour spice": [
+        18,
+        112
+    ],
+    "take spatula": [
+        12,
+        51
+    ],
+    "open cupboard br": [
+        13,
+        46,
+        149
+    ],
+    "put down mincing knife": [
+        6,
+        57,
+        247,
+        49
+    ],
+    "wash chopping board": [
+        7,
+        94,
+        59
+    ],
+    "take basil": [
+        12,
+        374
+    ],
+    "put knife counter": [
+        6,
+        49,
+        21
+    ],
+    "get tomato": [
+        93,
+        53
+    ],
+    "open egg shell": [
+        13,
+        35,
+        69
+    ],
+    "put salt shaker counter": [
+        6,
+        71,
+        121,
+        21
+    ],
+    "pick up ladle": [
+        32,
+        28,
+        161
+    ],
+    "open pepper": [
+        13,
+        83
+    ],
+    "empty glass": [
+        116,
+        23
+    ],
+    "open bread package": [
+        13,
+        30,
+        155
+    ],
+    "pick up food": [
+        32,
+        28,
+        20
+    ],
+    "move box": [
+        85,
+        78
+    ],
+    "put paneer": [
+        6,
+        162
+    ],
+    "wash container": [
+        7,
+        131
+    ],
+    "lather lid": [
+        65,
+        77
+    ],
+    "mix dough": [
+        17,
+        19
+    ],
+    "remove spoon": [
+        67,
+        39
+    ],
+    "pick up sweetcorn": [
+        32,
+        28,
+        239
+    ],
+    "put scale": [
+        6,
+        362
+    ],
+    "put knife&spoon sink": [
+        6,
+        366,
+        56
+    ],
+    "lather soap colander": [
+        65,
+        130,
+        87
+    ],
+    "take fish": [
+        12,
+        134
+    ],
+    "take measuring cup s counter": [
+        12,
+        63,
+        48,
+        100,
+        21
+    ],
+    "shape into patty": [
+        300,
+        165,
+        260
+    ],
+    "test potato": [
+        284,
+        38
+    ],
+    "put down measuring cup": [
+        6,
+        57,
+        63,
+        48
+    ],
+    "shake filter": [
+        109,
+        168
+    ],
+    "put butter spray can cupboard br": [
+        6,
+        24,
+        99,
+        88,
+        46,
+        149
+    ],
+    "open pack": [
+        13,
+        190
+    ],
+    "drain pasta": [
+        210,
+        58
+    ],
+    "take skin": [
+        12,
+        76
+    ],
+    "put glass bowl": [
+        6,
+        23,
+        5
+    ],
+    "close freezer": [
+        26,
+        287
+    ],
+    "increase heat": [
+        383,
+        248
+    ],
+    "place scissors": [
+        34,
+        189
+    ],
+    "put in bin": [
+        6,
+        105,
+        252
+    ],
+    "pick up plate": [
+        32,
+        28,
+        29
+    ],
+    "clean around sink": [
+        16,
+        342,
+        56
+    ],
+    "open packaging": [
+        13,
+        236
+    ],
+    "get pot": [
+        93,
+        62
+    ],
+    "put in salad": [
+        6,
+        105,
+        52
+    ],
+    "remove onion": [
+        67,
+        11
+    ],
+    "take mozzarella": [
+        12,
+        332
+    ],
+    "put in coffee": [
+        6,
+        105,
+        68
+    ],
+    "take pot": [
+        12,
+        62
+    ],
+    "throw away food residue": [
+        113,
+        222,
+        20,
+        249
+    ],
+    "put pan counter": [
+        6,
+        8,
+        21
+    ],
+    "rinse peach": [
+        14,
+        118
+    ],
+    "take fork pan": [
+        12,
+        27,
+        8
+    ],
+    "wipe table": [
+        70,
+        128
+    ],
+    "put down salad": [
+        6,
+        57,
+        52
+    ],
+    "open water": [
+        13,
+        43
+    ],
+    "put into bag": [
+        6,
+        165,
+        25
+    ],
+    "open bowl": [
+        13,
+        5
+    ],
+    "close milk": [
+        26,
+        136
+    ],
+    "put oven glove": [
+        6,
+        80,
+        238
+    ],
+    "take ginger": [
+        12,
+        211
+    ],
+    "shake soy milk": [
+        109,
+        305,
+        136
+    ],
+    "put in water": [
+        6,
+        105,
+        43
+    ],
+    "fill up glass": [
+        9,
+        28,
+        23
+    ],
+    "take grape": [
+        12,
+        164
+    ],
+    "look for spice": [
+        170,
+        157,
+        112
+    ],
+    "take butter spray can cupboard br": [
+        12,
+        24,
+        99,
+        88,
+        46,
+        149
+    ],
+    "remove plate": [
+        67,
+        29
+    ],
+    "put measuring cup": [
+        6,
+        63,
+        48
+    ],
+    "stuff tortilla": [
+        181,
+        126
+    ],
+    "put down coffee maker": [
+        6,
+        57,
+        68,
+        227
+    ],
+    "put chopping board": [
+        6,
+        94,
+        59
+    ],
+    "pick up egg": [
+        32,
+        28,
+        35
+    ],
+    "put glove": [
+        6,
+        238
+    ],
+    "pick up packaging": [
+        32,
+        28,
+        236
+    ],
+    "lather mincing knife": [
+        65,
+        247,
+        49
+    ],
+    "shake butter spray can": [
+        109,
+        24,
+        99,
+        88
+    ],
+    "open coffee pot": [
+        13,
+        68,
+        62
+    ],
+    "take fork bowl": [
+        12,
+        27,
+        5
+    ],
+    "pull kitchen roll": [
+        333,
+        174,
+        101
+    ],
+    "wash carrot": [
+        7,
+        72
+    ],
+    "open cover": [
+        13,
+        215
+    ],
+    "put coffee pot": [
+        6,
+        68,
+        62
+    ],
+    "put cereal box": [
+        6,
+        177,
+        78
+    ],
+    "take rice": [
+        12,
+        79
+    ],
+    "turn up hob": [
+        41,
+        28,
+        108
+    ],
+    "close cupboard tl": [
+        26,
+        46,
+        127
+    ],
+    "rinse up bowl": [
+        14,
+        28,
+        5
+    ],
+    "pick up bread": [
+        32,
+        28,
+        30
+    ],
+    "adjust heat": [
+        176,
+        248
+    ],
+    "put down sponge": [
+        6,
+        57,
+        110
+    ],
+    "put salt": [
+        6,
+        71
+    ],
+    "place coffee": [
+        34,
+        68
+    ],
+    "pick up bottle": [
+        32,
+        28,
+        61
+    ],
+    "open food processor": [
+        13,
+        20,
+        278
+    ],
+    "take peanut butter glass fridge": [
+        12,
+        47,
+        24,
+        23,
+        55
+    ],
+    "dice onion": [
+        145,
+        11
+    ],
+    "move paper": [
+        85,
+        143
+    ],
+    "put spatula plate": [
+        6,
+        51,
+        29
+    ],
+    "open oil": [
+        13,
+        40
+    ],
+    "clean teaspoon": [
+        16,
+        156
+    ],
+    "pick up tongs": [
+        32,
+        28,
+        387
+    ],
+    "adjust gas": [
+        176,
+        241
+    ],
+    "clean water": [
+        16,
+        43
+    ],
+    "put down fork": [
+        6,
+        57,
+        27
+    ],
+    "take table cloth": [
+        12,
+        128,
+        119
+    ],
+    "pick up cutlery": [
+        32,
+        28,
+        140
+    ],
+    "pick up tomato": [
+        32,
+        28,
+        53
+    ],
+    "clean chopstick": [
+        16,
+        214
+    ],
+    "return milk": [
+        353,
+        136
+    ],
+    "put noodle": [
+        6,
+        258
+    ],
+    "place potato": [
+        34,
+        38
+    ],
+    "get plate": [
+        93,
+        29
+    ],
+    "rinse tupperware": [
+        14,
+        153
+    ],
+    "take baking pan counter": [
+        12,
+        36,
+        8,
+        21
+    ],
+    "turn water": [
+        41,
+        43
+    ],
+    "cut olive": [
+        10,
+        86
+    ],
+    "put box": [
+        6,
+        78
+    ],
+    "remove packaging": [
+        67,
+        236
+    ],
+    "put peanut butter glass fridge": [
+        6,
+        47,
+        24,
+        23,
+        55
+    ],
+    "put down kitchen roll": [
+        6,
+        57,
+        174,
+        101
+    ],
+    "close cheese package": [
+        26,
+        82,
+        155
+    ],
+    "pick up chicken": [
+        32,
+        28,
+        111
+    ],
+    "close water": [
+        26,
+        43
+    ],
+    "take pepper shaker&salt shaker cupboard tl": [
+        12,
+        83,
+        340,
+        121,
+        46,
+        127
+    ],
+    "grab meat": [
+        186,
+        44
+    ],
+    "put pizza": [
+        6,
+        123
+    ],
+    "take teaspoon": [
+        12,
+        156
+    ],
+    "put down ladle": [
+        6,
+        57,
+        161
+    ],
+    "cut plastic bag": [
+        10,
+        151,
+        25
+    ],
+    "move colander": [
+        85,
+        87
+    ],
+    "pull down tablecloth": [
+        333,
+        57,
+        274
+    ],
+    "take red chilli": [
+        12,
+        326,
+        117
+    ],
+    "put down knife": [
+        6,
+        57,
+        49
+    ],
+    "put 1 paper towel fridge counter": [
+        6,
+        102,
+        143,
+        125,
+        55,
+        21
+    ],
+    "pick up scrap": [
+        32,
+        28,
+        323
+    ],
+    "put peanut butter glass&peanut butter glass cap counter": [
+        6,
+        47,
+        24,
+        358,
+        24,
+        23,
+        205,
+        21
+    ],
+    "take bowl counter": [
+        12,
+        5,
+        21
+    ],
+    "take tuna": [
+        12,
+        160
+    ],
+    "open brownie bag partially": [
+        13,
+        37,
+        25,
+        15
+    ],
+    "wash spring onion": [
+        7,
+        148,
+        11
+    ],
+    "put down milk": [
+        6,
+        57,
+        136
+    ],
+    "get kiwi": [
+        93,
+        167
+    ],
+    "put oil bottle cupboard bl": [
+        6,
+        40,
+        61,
+        46,
+        120
+    ],
+    "put plastic wrap": [
+        6,
+        151,
+        233
+    ],
+    "cut aubergine": [
+        10,
+        195
+    ],
+    "get potato": [
+        93,
+        38
+    ],
+    "slice chilli": [
+        42,
+        117
+    ],
+    "move pasta": [
+        85,
+        58
+    ],
+    "open salt box": [
+        13,
+        71,
+        78
+    ],
+    "open fridge": [
+        13,
+        55
+    ],
+    "open dishwasher drawer": [
+        13,
+        207,
+        84
+    ],
+    "switch pot": [
+        191,
+        62
+    ],
+    "take bread": [
+        12,
+        30
+    ],
+    "put down phone": [
+        6,
+        57,
+        398
+    ],
+    "move saucepan": [
+        85,
+        66
+    ],
+    "put down cloth": [
+        6,
+        57,
+        119
+    ],
+    "put down moka": [
+        6,
+        57,
+        294
+    ],
+    "cover pan": [
+        215,
+        8
+    ],
+    "throw away napkin": [
+        113,
+        222,
+        182
+    ],
+    "eat carrot": [
+        380,
+        72
+    ],
+    "switch on tap water": [
+        191,
+        73,
+        89,
+        43
+    ],
+    "place carafe": [
+        34,
+        245
+    ],
+    "move oil": [
+        85,
+        40
+    ],
+    "put v60": [
+        6,
+        285
+    ],
+    "fill oil oil bottle pan": [
+        9,
+        40,
+        40,
+        61,
+        8
+    ],
+    "dry bowl": [
+        64,
+        5
+    ],
+    "rinse cloth": [
+        14,
+        119
+    ],
+    "get oil": [
+        93,
+        40
+    ],
+    "put knife plate": [
+        6,
+        49,
+        29
+    ],
+    "pour oat": [
+        18,
+        229
+    ],
+    "take whisk bowl": [
+        12,
+        33,
+        5
+    ],
+    "put kitchen roll": [
+        6,
+        174,
+        101
+    ],
+    "take brownie box cupboard br": [
+        12,
+        37,
+        78,
+        46,
+        149
+    ],
+    "put down frying pan": [
+        6,
+        57,
+        132,
+        8
+    ],
+    "shake milk bottle": [
+        109,
+        136,
+        61
+    ],
+    "put cling film": [
+        6,
+        272,
+        264
+    ],
+    "pick up coffee": [
+        32,
+        28,
+        68
+    ],
+    "dry chopping board": [
+        64,
+        94,
+        59
+    ],
+    "look for spoon": [
+        170,
+        157,
+        39
+    ],
+    "take peanut butter glass counter": [
+        12,
+        47,
+        24,
+        23,
+        21
+    ],
+    "clean my hand": [
+        16,
+        322,
+        50
+    ],
+    "put down wok": [
+        6,
+        57,
+        307
+    ],
+    "dry pan": [
+        64,
+        8
+    ],
+    "open washing machine": [
+        13,
+        313,
+        209
+    ],
+    "rinse grape": [
+        14,
+        164
+    ],
+    "switch on oven": [
+        191,
+        73,
+        80
+    ],
+    "cut ginger": [
+        10,
+        211
+    ],
+    "place dough": [
+        34,
+        19
+    ],
+    "put tuna": [
+        6,
+        160
+    ],
+    "take spoon drawer": [
+        12,
+        39,
+        84
+    ],
+    "sponge cutting board": [
+        110,
+        97,
+        59
+    ],
+    "wash green bean": [
+        7,
+        219,
+        218
+    ],
+    "pick up salt": [
+        32,
+        28,
+        71
+    ],
+    "open cabinet": [
+        13,
+        263
+    ],
+    "put aubergine": [
+        6,
+        195
+    ],
+    "put down napkin": [
+        6,
+        57,
+        182
+    ],
+    "fold tablecloth": [
+        193,
+        274
+    ],
+    "stir stock": [
+        4,
+        146
+    ],
+    "distribute cheese": [
+        198,
+        82
+    ],
+    "clean towel": [
+        16,
+        125
+    ],
+    "take out dumpling": [
+        12,
+        173,
+        292
+    ],
+    "close sandwich": [
+        26,
+        299
+    ],
+    "wash wok": [
+        7,
+        307
+    ],
+    "fill brownie mix brownie bag bowl partially": [
+        9,
+        37,
+        17,
+        37,
+        25,
+        5,
+        15
+    ],
+    "clean hands towel": [
+        16,
+        223,
+        125
+    ],
+    "take cleanser": [
+        12,
+        357
+    ],
+    "close microwave": [
+        26,
+        228
+    ],
+    "fill water measuring cup l bowl": [
+        9,
+        43,
+        63,
+        48,
+        106,
+        5
+    ],
+    "take knife counter": [
+        12,
+        49,
+        21
+    ],
+    "open paper": [
+        13,
+        143
+    ],
+    "put oven": [
+        6,
+        80
+    ],
+    "open chilli": [
+        13,
+        117
+    ],
+    "open salt shaker": [
+        13,
+        71,
+        121
+    ],
+    "place chopping board": [
+        34,
+        94,
+        59
+    ],
+    "put peach": [
+        6,
+        118
+    ],
+    "pour mixture": [
+        18,
+        96
+    ],
+    "pick up sausage": [
+        32,
+        28,
+        124
+    ],
+    "turn on microwave": [
+        41,
+        73,
+        228
+    ],
+    "take spring onion": [
+        12,
+        148,
+        11
+    ],
+    "slice mushroom": [
+        42,
+        152
+    ],
+    "pour pepper": [
+        18,
+        83
+    ],
+    "pick up pesto": [
+        32,
+        28,
+        192
+    ],
+    "pick up cheese": [
+        32,
+        28,
+        82
+    ],
+    "pick up wooden spoon": [
+        32,
+        28,
+        204,
+        39
+    ],
+    "lather knife": [
+        65,
+        49
+    ],
+    "turn off cooker": [
+        41,
+        95,
+        104
+    ],
+    "twist clothes": [
+        356,
+        221
+    ],
+    "put salt shaker cupboard tl": [
+        6,
+        71,
+        121,
+        46,
+        127
+    ],
+    "get jar": [
+        93,
+        208
+    ],
+    "put tin": [
+        6,
+        231
+    ],
+    "open lunch box": [
+        13,
+        288,
+        78
+    ],
+    "pick up coffee cup": [
+        32,
+        28,
+        68,
+        48
+    ],
+    "split fish": [
+        297,
+        134
+    ],
+    "put plug": [
+        6,
+        338
+    ],
+    "take sun": [
+        12,
+        196
+    ],
+    "move carrot": [
+        85,
+        72
+    ],
+    "measure spice": [
+        348,
+        112
+    ],
+    "wash hand": [
+        7,
+        50
+    ],
+    "peel banana": [
+        31,
+        199
+    ],
+    "hold pan": [
+        256,
+        8
+    ],
+    "move frying pan": [
+        85,
+        132,
+        8
+    ],
+    "get cutting board": [
+        93,
+        97,
+        59
+    ],
+    "pick up onion peeling": [
+        32,
+        28,
+        11,
+        304
+    ],
+    "rinse top": [
+        14,
+        188
+    ],
+    "dry hand": [
+        64,
+        50
+    ],
+    "move scale": [
+        85,
+        362
+    ],
+    "pick up teapot": [
+        32,
+        28,
+        419
+    ],
+    "wash fork": [
+        7,
+        27
+    ],
+    "turn on hob": [
+        41,
+        73,
+        108
+    ],
+    "open cupboard tr": [
+        13,
+        46,
+        114
+    ],
+    "mix lettuce": [
+        17,
+        98
+    ],
+    "put vinegar": [
+        6,
+        320
+    ],
+    "turn meat": [
+        41,
+        44
+    ],
+    "turn chicken": [
+        41,
+        111
+    ],
+    "put cheese": [
+        6,
+        82
+    ],
+    "put fork pan": [
+        6,
+        27,
+        8
+    ],
+    "close sugar jar": [
+        26,
+        216,
+        208
+    ],
+    "get butter": [
+        93,
+        24
+    ],
+    "empty kettle": [
+        116,
+        158
+    ],
+    "get flour": [
+        93,
+        147
+    ],
+    "pick up pot": [
+        32,
+        28,
+        62
+    ],
+    "put plastic": [
+        6,
+        151
+    ],
+    "pour coffee": [
+        18,
+        68
+    ],
+    "rinse tong": [
+        14,
+        275
+    ],
+    "place milk": [
+        34,
+        136
+    ],
+    "pick up teaspoon": [
+        32,
+        28,
+        156
+    ],
+    "put skin": [
+        6,
+        76
+    ],
+    "clean with brush": [
+        16,
+        270,
+        179
+    ],
+    "open salad dressing": [
+        13,
+        52,
+        391
+    ],
+    "take salad bowl": [
+        12,
+        52,
+        5
+    ],
+    "pick up napkin": [
+        32,
+        28,
+        182
+    ],
+    "pick up coffee maker": [
+        32,
+        28,
+        68,
+        227
+    ],
+    "rinse mug": [
+        14,
+        122
+    ],
+    "remove pan": [
+        67,
+        8
+    ],
+    "put bowl": [
+        6,
+        5
+    ],
+    "shake bowl": [
+        109,
+        5
+    ],
+    "take out grape": [
+        12,
+        173,
+        164
+    ],
+    "wash spoon": [
+        7,
+        39
+    ],
+    "turn lid": [
+        41,
+        77
+    ],
+    "put vegetable": [
+        6,
+        312
+    ],
+    "put water": [
+        6,
+        43
+    ],
+    "take olive": [
+        12,
+        86
+    ],
+    "move pan": [
+        85,
+        8
+    ],
+    "take box": [
+        12,
+        78
+    ],
+    "take sugar": [
+        12,
+        216
+    ],
+    "rinse lettuce": [
+        14,
+        98
+    ],
+    "wash sink": [
+        7,
+        56
+    ],
+    "open spice": [
+        13,
+        112
+    ],
+    "grind pepper": [
+        203,
+        83
+    ],
+    "sprinkle water": [
+        107,
+        43
+    ],
+    "pick up baking powder": [
+        32,
+        28,
+        36,
+        351
+    ],
+    "wipe off counter": [
+        70,
+        95,
+        21
+    ],
+    "turn corn": [
+        41,
+        330
+    ],
+    "open plastic bag": [
+        13,
+        151,
+        25
+    ],
+    "pick up potato peeler": [
+        32,
+        28,
+        38,
+        316
+    ],
+    "close bag": [
+        26,
+        25
+    ],
+    "stir hand": [
+        4,
+        50
+    ],
+    "put cookie": [
+        6,
+        281
+    ],
+    "adjust cooker": [
+        176,
+        104
+    ],
+    "remove plastic": [
+        67,
+        151
+    ],
+    "put mug": [
+        6,
+        122
+    ],
+    "close tortilla": [
+        26,
+        126
+    ],
+    "clean tap water": [
+        16,
+        89,
+        43
+    ],
+    "take tomato": [
+        12,
+        53
+    ],
+    "close plastic bag": [
+        26,
+        151,
+        25
+    ],
+    "take tea bag": [
+        12,
+        257,
+        25
+    ],
+    "put cereal": [
+        6,
+        177
+    ],
+    "separate spring onion": [
+        400,
+        148,
+        11
+    ],
+    "put frying pan": [
+        6,
+        132,
+        8
+    ],
+    "put down coffee cup": [
+        6,
+        57,
+        68,
+        48
+    ],
+    "open butter": [
+        13,
+        24
+    ],
+    "take butter spray cap counter": [
+        12,
+        24,
+        99,
+        205,
+        21
+    ],
+    "fill dough bowl baking pan": [
+        9,
+        19,
+        5,
+        36,
+        8
+    ],
+    "put in bag": [
+        6,
+        105,
+        25
+    ],
+    "remove carrot": [
+        67,
+        72
+    ],
+    "put down bowl": [
+        6,
+        57,
+        5
+    ],
+    "place dish": [
+        34,
+        74
+    ],
+    "mix bowl": [
+        17,
+        5
+    ],
+    "open tin": [
+        13,
+        231
+    ],
+    "open kettle": [
+        13,
+        158
+    ],
+    "put cupboard": [
+        6,
+        46
+    ],
+    "wash salad": [
+        7,
+        52
+    ],
+    "move chopping board": [
+        85,
+        94,
+        59
+    ],
+    "place knife": [
+        34,
+        49
+    ],
+    "switch off oven": [
+        191,
+        95,
+        80
+    ],
+    "put down sugar": [
+        6,
+        57,
+        216
+    ],
+    "put yoghurt": [
+        6,
+        235
+    ],
+    "tap on tap": [
+        89,
+        73,
+        89
+    ],
+    "place bottle": [
+        34,
+        61
+    ],
+    "dry dish": [
+        64,
+        74
+    ],
+    "lather soap fork": [
+        65,
+        130,
+        27
+    ],
+    "take wooden spoon": [
+        12,
+        204,
+        39
+    ],
+    "close sugar bowl": [
+        26,
+        216,
+        5
+    ],
+    "take salt": [
+        12,
+        71
+    ],
+    "put 1 paper towel sink": [
+        6,
+        102,
+        143,
+        125,
+        56
+    ],
+    "fold cloth": [
+        193,
+        119
+    ],
+    "throw packaging": [
+        113,
+        236
+    ],
+    "insert bread": [
+        298,
+        30
+    ],
+    "fill kettle": [
+        9,
+        158
+    ],
+    "put down jar": [
+        6,
+        57,
+        208
+    ],
+    "close tupperware": [
+        26,
+        153
+    ],
+    "clean pot": [
+        16,
+        62
+    ],
+    "fill oil pan sink partially": [
+        9,
+        40,
+        8,
+        56,
+        15
+    ],
+    "slice garlic": [
+        42,
+        60
+    ],
+    "adjust flame": [
+        176,
+        234
+    ],
+    "fold table cloth": [
+        193,
+        128,
+        119
+    ],
+    "put 1 paper towel garbage": [
+        6,
+        102,
+        143,
+        125,
+        163
+    ],
+    "open bread bag": [
+        13,
+        30,
+        25
+    ],
+    "move coffee cup": [
+        85,
+        68,
+        48
+    ],
+    "pick up tupperware": [
+        32,
+        28,
+        153
+    ],
+    "clean bowl paper towel": [
+        16,
+        5,
+        143,
+        125
+    ],
+    "drain water": [
+        210,
+        43
+    ],
+    "empty pan": [
+        116,
+        8
+    ],
+    "fill jam jam glass bread partially": [
+        9,
+        54,
+        54,
+        23,
+        30,
+        15
+    ],
+    "wipe off pan": [
+        70,
+        95,
+        8
+    ],
+    "put salad bowl": [
+        6,
+        52,
+        5
+    ],
+    "clean mincing knife": [
+        16,
+        247,
+        49
+    ],
+    "place jar": [
+        34,
+        208
+    ],
+    "take tongs": [
+        12,
+        387
+    ],
+    "put down rolling pin": [
+        6,
+        57,
+        418,
+        416
+    ],
+    "take bread bag counter": [
+        12,
+        30,
+        25,
+        21
+    ],
+    "turn knob": [
+        41,
+        377
+    ],
+    "put 2 egg shell counter": [
+        6,
+        171,
+        35,
+        69,
+        21
+    ],
+    "move sponge": [
+        85,
+        110
+    ],
+    "put down coffee pot": [
+        6,
+        57,
+        68,
+        62
+    ],
+    "get pan": [
+        93,
+        8
+    ],
+    "transfer food": [
+        262,
+        20
+    ],
+    "take out bowl": [
+        12,
+        173,
+        5
+    ],
+    "spread butter": [
+        175,
+        24
+    ],
+    "close yoghurt": [
+        26,
+        235
+    ],
+    "take 1 egg shell egg box": [
+        12,
+        102,
+        35,
+        69,
+        35,
+        78
+    ],
+    "grab chopping board": [
+        186,
+        94,
+        59
+    ],
+    "open locker": [
+        13,
+        384
+    ],
+    "take kitchen towel": [
+        12,
+        174,
+        125
+    ],
+    "put down container": [
+        6,
+        57,
+        131
+    ],
+    "stir bowl spoon": [
+        4,
+        5,
+        39
+    ],
+    "cut pepper": [
+        10,
+        83
+    ],
+    "clean glass bowl": [
+        16,
+        23,
+        5
+    ],
+    "put stock cube": [
+        6,
+        146,
+        226
+    ],
+    "wash cucumber": [
+        7,
+        135
+    ],
+    "put onion": [
+        6,
+        11
+    ],
+    "turn paneer": [
+        41,
+        162
+    ],
+    "put olive": [
+        6,
+        86
+    ],
+    "open pepper shaker": [
+        13,
+        83,
+        121
+    ],
+    "wash courgette": [
+        7,
+        115
+    ],
+    "chop carrot": [
+        45,
+        72
+    ],
+    "flip tuna burger": [
+        141,
+        160,
+        325
+    ],
+    "close kettle": [
+        26,
+        158
+    ],
+    "grab detergent": [
+        186,
+        206
+    ],
+    "clean brush": [
+        16,
+        179
+    ],
+    "slice lettuce": [
+        42,
+        98
+    ],
+    "pick up spatula": [
+        32,
+        28,
+        51
+    ],
+    "rinse coffee cup": [
+        14,
+        68,
+        48
+    ],
+    "put down tong": [
+        6,
+        57,
+        275
+    ],
+    "take bowl": [
+        12,
+        5
+    ],
+    "place salad": [
+        34,
+        52
+    ],
+    "take curry": [
+        12,
+        75
+    ],
+    "open bag": [
+        13,
+        25
+    ],
+    "press button": [
+        201,
+        343
+    ],
+    "throw peel": [
+        113,
+        31
+    ],
+    "remove leaf": [
+        67,
+        169
+    ],
+    "seal plastic bag": [
+        339,
+        151,
+        25
+    ],
+    "clean coffee machine": [
+        16,
+        68,
+        209
+    ],
+    "rinse onion": [
+        14,
+        11
+    ],
+    "lather pan": [
+        65,
+        8
+    ],
+    "take towel": [
+        12,
+        125
+    ],
+    "put tupperware": [
+        6,
+        153
+    ],
+    "peel onion": [
+        31,
+        11
+    ],
+    "take bowl cupboard tm": [
+        12,
+        5,
+        46,
+        166
+    ],
+    "cut lettuce": [
+        10,
+        98
+    ],
+    "put down box": [
+        6,
+        57,
+        78
+    ],
+    "place pan": [
+        34,
+        8
+    ],
+    "open coffee machine": [
+        13,
+        68,
+        209
+    ],
+    "put on lid": [
+        6,
+        73,
+        77
+    ],
+    "clean up bowl": [
+        16,
+        28,
+        5
+    ],
+    "take spoon bowl": [
+        12,
+        39,
+        5
+    ],
+    "dry glass": [
+        64,
+        23
+    ],
+    "put instant noodle": [
+        6,
+        365,
+        258
+    ],
+    "put washing liquid": [
+        6,
+        313,
+        217
+    ],
+    "open butter spray can": [
+        13,
+        24,
+        99,
+        88
+    ],
+    "take cheese": [
+        12,
+        82
+    ],
+    "fill oil measuring cup s bowl": [
+        9,
+        40,
+        63,
+        48,
+        100,
+        5
+    ],
+    "turn on coffee machine": [
+        41,
+        73,
+        68,
+        209
+    ],
+    "put container": [
+        6,
+        131
+    ],
+    "take kettle": [
+        12,
+        158
+    ],
+    "put down mushroom": [
+        6,
+        57,
+        152
+    ],
+    "wipe off knife": [
+        70,
+        95,
+        49
+    ],
+    "place spice": [
+        34,
+        112
+    ],
+    "open bread": [
+        13,
+        30
+    ],
+    "take water": [
+        12,
+        43
+    ],
+    "wash board": [
+        7,
+        59
+    ],
+    "put jam glass 2 fridge": [
+        6,
+        54,
+        23,
+        171,
+        55
+    ],
+    "cut carrot": [
+        10,
+        72
+    ],
+    "put up liquid": [
+        6,
+        28,
+        217
+    ],
+    "wash tin": [
+        7,
+        231
+    ],
+    "pick up can": [
+        32,
+        28,
+        88
+    ],
+    "lather spoon rest": [
+        65,
+        39,
+        282
+    ],
+    "light stove": [
+        306,
+        90
+    ],
+    "take olive oil": [
+        12,
+        86,
+        40
+    ],
+    "turn tap": [
+        41,
+        89
+    ],
+    "put down beer": [
+        6,
+        57,
+        364
+    ],
+    "take out sticker": [
+        12,
+        173,
+        402
+    ],
+    "turn off extractor fan": [
+        41,
+        95,
+        408,
+        409
+    ],
+    "shake pan": [
+        109,
+        8
+    ],
+    "fill pepper pepper shaker pan": [
+        9,
+        83,
+        83,
+        121,
+        8
+    ],
+    "put down tongs": [
+        6,
+        57,
+        387
+    ],
+    "turn off light": [
+        41,
+        95,
+        306
+    ],
+    "place garlic": [
+        34,
+        60
+    ],
+    "stir courgette": [
+        4,
+        115
+    ],
+    "wash lid": [
+        7,
+        77
+    ],
+    "grab spoon": [
+        186,
+        39
+    ],
+    "spoon stock": [
+        39,
+        146
+    ],
+    "fill water": [
+        9,
+        43
+    ],
+    "throw tomato": [
+        113,
+        53
+    ],
+    "close container": [
+        26,
+        131
+    ],
+    "put brownie box garbage": [
+        6,
+        37,
+        78,
+        163
+    ],
+    "take spatula plate": [
+        12,
+        51,
+        29
+    ],
+    "put oil bottle cupboard br": [
+        6,
+        40,
+        61,
+        46,
+        149
+    ],
+    "put down pot": [
+        6,
+        57,
+        62
+    ],
+    "place spoon": [
+        34,
+        39
+    ],
+    "put sugar": [
+        6,
+        216
+    ],
+    "lather salad bowl": [
+        65,
+        52,
+        5
+    ],
+    "clean mug": [
+        16,
+        122
+    ],
+    "take dough": [
+        12,
+        19
+    ],
+    "fill peanut butter peanut butter glass bread partially": [
+        9,
+        47,
+        24,
+        47,
+        24,
+        23,
+        30,
+        15
+    ],
+    "sprinkle sun": [
+        107,
+        196
+    ],
+    "take peanut butter glass cap counter": [
+        12,
+        47,
+        24,
+        23,
+        205,
+        21
+    ],
+    "put oil bottle cap counter": [
+        6,
+        40,
+        61,
+        205,
+        21
+    ],
+    "grab knife": [
+        186,
+        49
+    ],
+    "close door": [
+        26,
+        183
+    ],
+    "empty water": [
+        116,
+        43
+    ],
+    "rinse pan": [
+        14,
+        8
+    ],
+    "add sauce": [
+        172,
+        81
+    ],
+    "move saucer": [
+        85,
+        197
+    ],
+    "open packet": [
+        13,
+        268
+    ],
+    "take spatula drawer": [
+        12,
+        51,
+        84
+    ],
+    "put butter": [
+        6,
+        24
+    ],
+    "take brownie box cupboard tl": [
+        12,
+        37,
+        78,
+        46,
+        127
+    ],
+    "put in salt": [
+        6,
+        105,
+        71
+    ],
+    "open stock cube": [
+        13,
+        146,
+        226
+    ],
+    "throw garlic": [
+        113,
+        60
+    ],
+    "put rice": [
+        6,
+        79
+    ],
+    "place sauce": [
+        34,
+        81
+    ],
+    "put spatula": [
+        6,
+        51
+    ],
+    "take lighter": [
+        12,
+        378
+    ],
+    "put coffee": [
+        6,
+        68
+    ],
+    "brush inner side": [
+        179,
+        310,
+        250
+    ],
+    "take pasta bag": [
+        12,
+        58,
+        25
+    ],
+    "get leaf": [
+        93,
+        169
+    ],
+    "take potato": [
+        12,
+        38
+    ],
+    "pick up dish": [
+        32,
+        28,
+        74
+    ],
+    "wash cutlery": [
+        7,
+        140
+    ],
+    "close rice": [
+        26,
+        79
+    ],
+    "take plastic": [
+        12,
+        151
+    ],
+    "select temperature": [
+        359,
+        230
+    ],
+    "put down spice": [
+        6,
+        57,
+        112
+    ],
+    "cut 1 sandwich knife": [
+        10,
+        102,
+        299,
+        49
+    ],
+    "pick up banana": [
+        32,
+        28,
+        199
+    ],
+    "stack saucepan": [
+        371,
+        66
+    ],
+    "put down paella": [
+        6,
+        57,
+        414
+    ],
+    "put scissors counter": [
+        6,
+        189,
+        21
+    ],
+    "pick up tablecloth": [
+        32,
+        28,
+        274
+    ],
+    "put kitchen towel": [
+        6,
+        174,
+        125
+    ],
+    "adjust stove": [
+        176,
+        90
+    ],
+    "take drawer": [
+        12,
+        84
+    ],
+    "wash measuring cup": [
+        7,
+        63,
+        48
+    ],
+    "wash counter": [
+        7,
+        21
+    ],
+    "take fork counter": [
+        12,
+        27,
+        21
+    ],
+    "move container": [
+        85,
+        131
+    ],
+    "close soy milk": [
+        26,
+        305,
+        136
+    ],
+    "open pasta bag": [
+        13,
+        58,
+        25
+    ],
+    "pour salsa": [
+        18,
+        289
+    ],
+    "pick up strainer": [
+        32,
+        28,
+        242
+    ],
+    "slice potato": [
+        42,
+        38
+    ],
+    "put chorizo": [
+        6,
+        308
+    ],
+    "pick up cup": [
+        32,
+        28,
+        48
+    ],
+    "get water": [
+        93,
+        43
+    ],
+    "get glass": [
+        93,
+        23
+    ],
+    "take out heart": [
+        12,
+        173,
+        295
+    ],
+    "pour courgette": [
+        18,
+        115
+    ],
+    "fill brownie mix brownie bag bowl": [
+        9,
+        37,
+        17,
+        37,
+        25,
+        5
+    ],
+    "put green bean": [
+        6,
+        219,
+        218
+    ],
+    "fill dough bowl baking pan partially": [
+        9,
+        19,
+        5,
+        36,
+        8,
+        15
+    ],
+    "take saucepan": [
+        12,
+        66
+    ],
+    "pick up container": [
+        32,
+        28,
+        131
+    ],
+    "take pan": [
+        12,
+        8
+    ],
+    "rinse knife": [
+        14,
+        49
+    ],
+    "put detergent": [
+        6,
+        206
+    ],
+    "whisk egg": [
+        33,
+        35
+    ],
+    "take pepper shaker&salt shaker counter": [
+        12,
+        83,
+        340,
+        121,
+        21
+    ],
+    "put olive oil": [
+        6,
+        86,
+        40
+    ],
+    "place teaspoon": [
+        34,
+        156
+    ],
+    "pour hot water": [
+        18,
+        318,
+        43
+    ],
+    "put down rice": [
+        6,
+        57,
+        79
+    ],
+    "shake mug": [
+        109,
+        122
+    ],
+    "take out tomato": [
+        12,
+        173,
+        53
+    ],
+    "stir pan fork": [
+        4,
+        8,
+        27
+    ],
+    "grab colander": [
+        186,
+        87
+    ],
+    "stir onion": [
+        4,
+        11
+    ],
+    "chop parsley": [
+        45,
+        150
+    ],
+    "lift lid": [
+        367,
+        77
+    ],
+    "clean sponge": [
+        16,
+        110
+    ],
+    "open food container": [
+        13,
+        20,
+        131
+    ],
+    "open rice": [
+        13,
+        79
+    ],
+    "lather pot": [
+        65,
+        62
+    ],
+    "rinse box": [
+        14,
+        78
+    ],
+    "put food container": [
+        6,
+        20,
+        131
+    ],
+    "dry box": [
+        64,
+        78
+    ],
+    "test rice": [
+        284,
+        79
+    ],
+    "put pepper": [
+        6,
+        83
+    ],
+    "rinse pot": [
+        14,
+        62
+    ],
+    "put freezer": [
+        6,
+        287
+    ],
+    "put down egg": [
+        6,
+        57,
+        35
+    ],
+    "fold cereal bag": [
+        193,
+        177,
+        25
+    ],
+    "take butter spray can counter": [
+        12,
+        24,
+        99,
+        88,
+        21
+    ],
+    "close tortilla pack": [
+        26,
+        126,
+        190
+    ],
+    "open microwave": [
+        13,
+        228
+    ],
+    "put liquid": [
+        6,
+        217
+    ],
+    "put chilli": [
+        6,
+        117
+    ],
+    "turn on stove": [
+        41,
+        73,
+        90
+    ],
+    "pick up chilli": [
+        32,
+        28,
+        117
+    ],
+    "open oil bottle": [
+        13,
+        40,
+        61
+    ],
+    "remove water": [
+        67,
+        43
+    ],
+    "spoon rice": [
+        39,
+        79
+    ],
+    "slice cake": [
+        42,
+        335
+    ],
+    "place bowl": [
+        34,
+        5
+    ],
+    "take knife drawer": [
+        12,
+        49,
+        84
+    ],
+    "pour potato": [
+        18,
+        38
+    ],
+    "put rag": [
+        6,
+        154
+    ],
+    "take fork drawer": [
+        12,
+        27,
+        84
+    ],
+    "grab cheese": [
+        186,
+        82
+    ],
+    "put down olive oil": [
+        6,
+        57,
+        86,
+        40
+    ],
+    "put chicken": [
+        6,
+        111
+    ],
+    "remove filter": [
+        67,
+        168
+    ],
+    "mix sauce": [
+        17,
+        81
+    ],
+    "pick up potato": [
+        32,
+        28,
+        38
+    ],
+    "put steak": [
+        6,
+        401
+    ],
+    "rinse can": [
+        14,
+        88
+    ],
+    "take whisk drawer": [
+        12,
+        33,
+        84
+    ],
+    "take plate cupboard tr": [
+        12,
+        29,
+        46,
+        114
+    ],
+    "clean top": [
+        16,
+        188
+    ],
+    "clean tap": [
+        16,
+        89
+    ],
+    "throw cloth": [
+        113,
+        119
+    ],
+    "pick up tuna": [
+        32,
+        28,
+        160
+    ],
+    "place lid": [
+        34,
+        77
+    ],
+    "sprinkle cheese": [
+        107,
+        82
+    ],
+    "put rubbish": [
+        6,
+        232
+    ],
+    "pick up towel": [
+        32,
+        28,
+        125
+    ],
+    "get mug": [
+        93,
+        122
+    ],
+    "pour cereal": [
+        18,
+        177
+    ],
+    "close sauce": [
+        26,
+        81
+    ],
+    "lower heat": [
+        397,
+        248
+    ],
+    "open egg box": [
+        13,
+        35,
+        78
+    ],
+    "return bag": [
+        353,
+        25
+    ],
+    "peel peach": [
+        31,
+        118
+    ],
+    "rinse chopping board": [
+        14,
+        94,
+        59
+    ],
+    "take knife": [
+        12,
+        49
+    ],
+    "take stock cube": [
+        12,
+        146,
+        226
+    ],
+    "put soy milk": [
+        6,
+        305,
+        136
+    ],
+    "take pepper shaker counter": [
+        12,
+        83,
+        121,
+        21
+    ],
+    "close vinegar": [
+        26,
+        320
+    ],
+    "pick up package": [
+        32,
+        28,
+        155
+    ],
+    "open tap": [
+        13,
+        89
+    ],
+    "get bottle": [
+        93,
+        61
+    ],
+    "close egg box": [
+        26,
+        35,
+        78
+    ],
+    "clean chopping board": [
+        16,
+        94,
+        59
+    ],
+    "cut cheese": [
+        10,
+        82
+    ],
+    "empty filter": [
+        116,
+        168
+    ],
+    "put down pasta": [
+        6,
+        57,
+        58
+    ],
+    "close sugar": [
+        26,
+        216
+    ],
+    "place bell pepper": [
+        34,
+        213,
+        83
+    ],
+    "put down peach": [
+        6,
+        57,
+        118
+    ],
+    "add salt": [
+        172,
+        71
+    ],
+    "put down drawer": [
+        6,
+        57,
+        84
+    ],
+    "rinse ladle": [
+        14,
+        161
+    ],
+    "put away pan": [
+        6,
+        222,
+        8
+    ],
+    "grab squash": [
+        186,
+        237
+    ],
+    "take oil": [
+        12,
+        40
+    ],
+    "put baking pan counter": [
+        6,
+        36,
+        8,
+        21
+    ],
+    "pick up milk": [
+        32,
+        28,
+        136
+    ],
+    "pour noodle": [
+        18,
+        258
+    ],
+    "open freezer": [
+        13,
+        287
+    ],
+    "put jam glass counter": [
+        6,
+        54,
+        23,
+        21
+    ],
+    "put tomato": [
+        6,
+        53
+    ],
+    "put coffee maker": [
+        6,
+        68,
+        227
+    ],
+    "open egg": [
+        13,
+        35
+    ],
+    "put pan": [
+        6,
+        8
+    ],
+    "peel potato": [
+        31,
+        38
+    ],
+    "put pesto": [
+        6,
+        192
+    ],
+    "take sponge": [
+        12,
+        110
+    ],
+    "place board": [
+        34,
+        59
+    ],
+    "cut bell pepper": [
+        10,
+        213,
+        83
+    ],
+    "put down aubergine": [
+        6,
+        57,
+        195
+    ],
+    "take brownie bag brownie box": [
+        12,
+        37,
+        25,
+        37,
+        78
+    ],
+    "put chicken breast": [
+        6,
+        111,
+        324
+    ],
+    "rinse glass": [
+        14,
+        23
+    ],
+    "put spring onion": [
+        6,
+        148,
+        11
+    ],
+    "take colander": [
+        12,
+        87
+    ],
+    "put down support": [
+        6,
+        57,
+        360
+    ],
+    "rub pan": [
+        334,
+        8
+    ],
+    "close locker": [
+        26,
+        384
+    ],
+    "close peanut butter glass": [
+        26,
+        47,
+        24,
+        23
+    ],
+    "pick up baking tray": [
+        32,
+        28,
+        36,
+        276
+    ],
+    "clean rag": [
+        16,
+        154
+    ],
+    "eat olive": [
+        380,
+        86
+    ],
+    "take egg box fridge": [
+        12,
+        35,
+        78,
+        55
+    ],
+    "put in vinegar": [
+        6,
+        105,
+        320
+    ],
+    "rinse cutting board": [
+        14,
+        97,
+        59
+    ],
+    "put lettuce": [
+        6,
+        98
+    ],
+    "close cupboard tm": [
+        26,
+        46,
+        166
+    ],
+    "close olive oil": [
+        26,
+        86,
+        40
+    ],
+    "put spoon plate": [
+        6,
+        39,
+        29
+    ],
+    "flip tortilla": [
+        141,
+        126
+    ],
+    "pick up sauce": [
+        32,
+        28,
+        81
+    ],
+    "throw sponge": [
+        113,
+        110
+    ],
+    "squeeze lemon": [
+        139,
+        187
+    ],
+    "pick up glass": [
+        32,
+        28,
+        23
+    ],
+    "flip meat": [
+        141,
+        44
+    ],
+    "cut courgette": [
+        10,
+        115
+    ],
+    "put down bottle": [
+        6,
+        57,
+        61
+    ],
+    "close tap": [
+        26,
+        89
+    ],
+    "wash baking pan": [
+        7,
+        36,
+        8
+    ],
+    "throw paper": [
+        113,
+        143
+    ],
+    "scoop food": [
+        137,
+        20
+    ],
+    "grab oil": [
+        186,
+        40
+    ],
+    "put content": [
+        6,
+        184
+    ],
+    "turn off food processor": [
+        41,
+        95,
+        20,
+        278
+    ],
+    "throw away scrap": [
+        113,
+        222,
+        323
+    ],
+    "take scissors drawer": [
+        12,
+        189,
+        84
+    ],
+    "pour milk": [
+        18,
+        136
+    ],
+    "mix food": [
+        17,
+        20
+    ],
+    "adjust gas temperature": [
+        176,
+        241,
+        230
+    ],
+    "pick up peel": [
+        32,
+        28,
+        31
+    ],
+    "move cooker": [
+        85,
+        104
+    ],
+    "get stock": [
+        93,
+        146
+    ],
+    "take chicken breast": [
+        12,
+        111,
+        324
+    ],
+    "shake pasta": [
+        109,
+        58
+    ],
+    "cut dough": [
+        10,
+        19
+    ],
+    "stir bowl fork": [
+        4,
+        5,
+        27
+    ],
+    "wash glass": [
+        7,
+        23
+    ],
+    "put down plate": [
+        6,
+        57,
+        29
+    ],
+    "put rack": [
+        6,
+        417
+    ],
+    "place tomato": [
+        34,
+        53
+    ],
+    "place oil bottle": [
+        34,
+        40,
+        61
+    ],
+    "put down sauce": [
+        6,
+        57,
+        81
+    ],
+    "empty jug": [
+        116,
+        200
+    ],
+    "stir meat": [
+        4,
+        44
+    ],
+    "take food container": [
+        12,
+        20,
+        131
+    ],
+    "pick up measuring spoon": [
+        32,
+        28,
+        63,
+        39
+    ],
+    "chop chilli": [
+        45,
+        117
+    ],
+    "arrange bowl": [
+        243,
+        5
+    ],
+    "set timer": [
+        194,
+        341
+    ],
+    "fill salad bowl": [
+        9,
+        52,
+        5
+    ],
+    "close oregano bag": [
+        26,
+        159,
+        25
+    ],
+    "throw away peeling": [
+        113,
+        222,
+        304
+    ],
+    "grab bag": [
+        186,
+        25
+    ],
+    "move onion": [
+        85,
+        11
+    ],
+    "pick up flour": [
+        32,
+        28,
+        147
+    ],
+    "stir spice": [
+        4,
+        112
+    ],
+    "put table cloth": [
+        6,
+        128,
+        119
+    ],
+    "put cutting board": [
+        6,
+        97,
+        59
+    ],
+    "grab plate": [
+        186,
+        29
+    ],
+    "put sausage": [
+        6,
+        124
+    ],
+    "move cup": [
+        85,
+        48
+    ],
+    "pick up chopstick": [
+        32,
+        28,
+        214
+    ],
+    "open cheese package": [
+        13,
+        82,
+        155
+    ],
+    "throw plastic": [
+        113,
+        151
+    ],
+    "pick up onion": [
+        32,
+        28,
+        11
+    ],
+    "pick up soy sauce": [
+        32,
+        28,
+        305,
+        81
+    ],
+    "throw bag": [
+        113,
+        25
+    ],
+    "take packaging": [
+        12,
+        236
+    ],
+    "wash onion": [
+        7,
+        11
+    ],
+    "put ginger": [
+        6,
+        211
+    ],
+    "lather coffee cup": [
+        65,
+        68,
+        48
+    ],
+    "put pepper shaker counter": [
+        6,
+        83,
+        121,
+        21
+    ],
+    "clean wooden spoon": [
+        16,
+        204,
+        39
+    ],
+    "open cupboard tm": [
+        13,
+        46,
+        166
+    ],
+    "put measuring cup l sink": [
+        6,
+        63,
+        48,
+        106,
+        56
+    ],
+    "rinse sink cap": [
+        14,
+        56,
+        205
+    ],
+    "clean knife": [
+        16,
+        49
+    ],
+    "put down sausage": [
+        6,
+        57,
+        124
+    ],
+    "take v60": [
+        12,
+        285
+    ],
+    "close fridge": [
+        26,
+        55
+    ],
+    "put milk bottle": [
+        6,
+        136,
+        61
+    ],
+    "take spatula pan": [
+        12,
+        51,
+        8
+    ],
+    "clean spoon": [
+        16,
+        39
+    ],
+    "put down colander": [
+        6,
+        57,
+        87
+    ],
+    "put up bowl": [
+        6,
+        28,
+        5
+    ],
+    "pick up silverware": [
+        32,
+        28,
+        259
+    ],
+    "open jar": [
+        13,
+        208
+    ],
+    "put down wooden spoon": [
+        6,
+        57,
+        204,
+        39
+    ],
+    "sharpen knife": [
+        244,
+        49
+    ],
+    "pick up saucer": [
+        32,
+        28,
+        197
+    ],
+    "wring cloth": [
+        404,
+        119
+    ],
+    "chop garlic": [
+        45,
+        60
+    ],
+    "put towel counter": [
+        6,
+        125,
+        21
+    ],
+    "pick up box": [
+        32,
+        28,
+        78
+    ],
+    "fill egg open egg shell bowl": [
+        9,
+        35,
+        13,
+        35,
+        69,
+        5
+    ],
+    "take parsley": [
+        12,
+        150
+    ],
+    "put yeast": [
+        6,
+        279
+    ],
+    "rinse rag": [
+        14,
+        154
+    ],
+    "get chopping board": [
+        93,
+        94,
+        59
+    ],
+    "open container": [
+        13,
+        131
+    ],
+    "fill salt salt shaker bowl": [
+        9,
+        71,
+        71,
+        121,
+        5
+    ],
+    "take pepper shaker cupboard tl": [
+        12,
+        83,
+        121,
+        46,
+        127
+    ],
+    "open sauce bottle": [
+        13,
+        81,
+        61
+    ],
+    "pick up pizza": [
+        32,
+        28,
+        123
+    ],
+    "put in dishwasher": [
+        6,
+        105,
+        207
+    ],
+    "mix salt": [
+        17,
+        71
+    ],
+    "spray detergent": [
+        99,
+        206
+    ],
+    "mix curry": [
+        17,
+        75
+    ],
+    "open drawer": [
+        13,
+        84
+    ],
+    "open yeast": [
+        13,
+        279
+    ],
+    "put tortilla": [
+        6,
+        126
+    ],
+    "throw seed": [
+        113,
+        265
+    ],
+    "take towel counter": [
+        12,
+        125,
+        21
+    ],
+    "cut leaf": [
+        10,
+        169
+    ],
+    "take fork plate": [
+        12,
+        27,
+        29
+    ],
+    "close dishwasher": [
+        26,
+        207
+    ],
+    "press meat": [
+        201,
+        44
+    ],
+    "pour onion": [
+        18,
+        11
+    ],
+    "pour mushroom": [
+        18,
+        152
+    ],
+    "set flame": [
+        194,
+        234
+    ],
+    "throw sausage": [
+        113,
+        124
+    ],
+    "take cutlery": [
+        12,
+        140
+    ],
+    "take ladle": [
+        12,
+        161
+    ],
+    "pick up mug": [
+        32,
+        28,
+        122
+    ],
+    "place bread": [
+        34,
+        30
+    ],
+    "remove seed": [
+        67,
+        265
+    ],
+    "close pepper shaker": [
+        26,
+        83,
+        121
+    ],
+    "peel carrot": [
+        31,
+        72
+    ],
+    "rinse filter": [
+        14,
+        168
+    ],
+    "take out tortilla": [
+        12,
+        173,
+        126
+    ],
+    "put cleaning liquid": [
+        6,
+        301,
+        217
+    ],
+    "put pan stove": [
+        6,
+        8,
+        90
+    ],
+    "take yeast": [
+        12,
+        279
+    ],
+    "squeeze sponge": [
+        139,
+        110
+    ],
+    "put spatula pan": [
+        6,
+        51,
+        8
+    ],
+    "turn off gas": [
+        41,
+        95,
+        241
+    ],
+    "wash wooden spoon": [
+        7,
+        204,
+        39
+    ],
+    "pour squash": [
+        18,
+        237
+    ],
+    "pick up board": [
+        32,
+        28,
+        59
+    ],
+    "rinse frying pan": [
+        14,
+        132,
+        8
+    ],
+    "close lunch box": [
+        26,
+        288,
+        78
+    ],
+    "place plastic bag": [
+        34,
+        151,
+        25
+    ],
+    "shake bottle": [
+        109,
+        61
+    ],
+    "change temperature": [
+        375,
+        230
+    ],
+    "pick up tray": [
+        32,
+        28,
+        276
+    ],
+    "wash leaf": [
+        7,
+        169
+    ],
+    "put milk": [
+        6,
+        136
+    ],
+    "put garbage": [
+        6,
+        163
+    ],
+    "pick up saucepan": [
+        32,
+        28,
+        66
+    ],
+    "take chopping board": [
+        12,
+        94,
+        59
+    ],
+    "take clothes": [
+        12,
+        221
+    ],
+    "put oregano": [
+        6,
+        159
+    ],
+    "put flour": [
+        6,
+        147
+    ],
+    "dice garlic": [
+        145,
+        60
+    ],
+    "close jam glass": [
+        26,
+        54,
+        23
+    ],
+    "wash box": [
+        7,
+        78
+    ],
+    "sprinkle flour": [
+        107,
+        147
+    ],
+    "take jam glass counter": [
+        12,
+        54,
+        23,
+        21
+    ],
+    "put dust": [
+        6,
+        315
+    ],
+    "turn on water": [
+        41,
+        73,
+        43
+    ],
+    "clean surface": [
+        16,
+        138
+    ],
+    "open chopped tomato": [
+        13,
+        225,
+        53
+    ],
+    "test pan": [
+        284,
+        8
+    ],
+    "take sausage": [
+        12,
+        124
+    ],
+    "move cutlery": [
+        85,
+        140
+    ],
+    "grab bottle": [
+        186,
+        61
+    ],
+    "put cutlery": [
+        6,
+        140
+    ],
+    "put into dustbin": [
+        6,
+        165,
+        392
+    ],
+    "water sponge": [
+        43,
+        110
+    ],
+    "put sink cap": [
+        6,
+        56,
+        205
+    ],
+    "fold box": [
+        193,
+        78
+    ],
+    "cut spring onion": [
+        10,
+        148,
+        11
+    ],
+    "open brownie bag": [
+        13,
+        37,
+        25
+    ],
+    "put strainer": [
+        6,
+        242
+    ],
+    "turn kettle": [
+        41,
+        158
+    ],
+    "pour pesto": [
+        18,
+        192
+    ],
+    "close rice bag": [
+        26,
+        79,
+        25
+    ],
+    "put cover": [
+        6,
+        215
+    ],
+    "add olive oil": [
+        172,
+        86,
+        40
+    ],
+    "stir frying pan": [
+        4,
+        132,
+        8
+    ],
+    "put in cupboard": [
+        6,
+        105,
+        46
+    ],
+    "clean hands paper towel": [
+        16,
+        223,
+        143,
+        125
+    ],
+    "dry board": [
+        64,
+        59
+    ],
+    "clean fork": [
+        16,
+        27
+    ],
+    "pick up cereal": [
+        32,
+        28,
+        177
+    ],
+    "put can": [
+        6,
+        88
+    ],
+    "take bread bag cupboard tl": [
+        12,
+        30,
+        25,
+        46,
+        127
+    ],
+    "close coffee pot": [
+        26,
+        68,
+        62
+    ],
+    "take detergent": [
+        12,
+        206
+    ],
+    "soak sponge": [
+        355,
+        110
+    ],
+    "wash cloth": [
+        7,
+        119
+    ],
+    "cut salad": [
+        10,
+        52
+    ],
+    "take egg box counter": [
+        12,
+        35,
+        78,
+        21
+    ],
+    "mix stock": [
+        17,
+        146
+    ],
+    "put garlic": [
+        6,
+        60
+    ],
+    "search for knife": [
+        269,
+        157,
+        49
+    ],
+    "close olive": [
+        26,
+        86
+    ],
+    "put saucepan": [
+        6,
+        66
+    ],
+    "fold bag": [
+        193,
+        25
+    ],
+    "pick up salad bowl": [
+        32,
+        28,
+        52,
+        5
+    ],
+    "take cucumber": [
+        12,
+        135
+    ],
+    "place spatula": [
+        34,
+        51
+    ],
+    "take pizza slice": [
+        12,
+        123,
+        42
+    ],
+    "open hummus": [
+        13,
+        321
+    ],
+    "move bread": [
+        85,
+        30
+    ],
+    "get wooden spoon": [
+        93,
+        204,
+        39
+    ],
+    "adjust hob": [
+        176,
+        108
+    ],
+    "dry ladle": [
+        64,
+        161
+    ],
+    "place grape": [
+        34,
+        164
+    ],
+    "chop sun": [
+        45,
+        196
+    ],
+    "take garlic": [
+        12,
+        60
+    ],
+    "remove peach": [
+        67,
+        118
+    ],
+    "squeeze dough": [
+        139,
+        19
+    ],
+    "wash tap water": [
+        7,
+        89,
+        43
+    ],
+    "wash bowl": [
+        7,
+        5
+    ],
+    "wash pan": [
+        7,
+        8
+    ],
+    "put grape": [
+        6,
+        164
+    ],
+    "take measuring cup": [
+        12,
+        63,
+        48
+    ],
+    "wash table": [
+        7,
+        128
+    ],
+    "pick up tuna mixture": [
+        32,
+        28,
+        160,
+        96
+    ],
+    "put baking pan oven": [
+        6,
+        36,
+        8,
+        80
+    ],
+    "start washing machine": [
+        327,
+        313,
+        209
+    ],
+    "take 1 paper towel fridge counter": [
+        12,
+        102,
+        143,
+        125,
+        55,
+        21
+    ],
+    "cut kiwi": [
+        10,
+        167
+    ],
+    "turn off heater": [
+        41,
+        95,
+        129
+    ],
+    "put down chopping board": [
+        6,
+        57,
+        94,
+        59
+    ],
+    "stir coffee": [
+        4,
+        68
+    ],
+    "put knife drawer": [
+        6,
+        49,
+        84
+    ],
+    "pick up raisin": [
+        32,
+        28,
+        352
+    ],
+    "rinse carafe": [
+        14,
+        245
+    ],
+    "open garbage": [
+        13,
+        163
+    ],
+    "put whisk bowl": [
+        6,
+        33,
+        5
+    ],
+    "pour salad": [
+        18,
+        52
+    ],
+    "pour rice": [
+        18,
+        79
+    ],
+    "pour bowl": [
+        18,
+        5
+    ],
+    "shake glass": [
+        109,
+        23
+    ],
+    "put coffee ground": [
+        6,
+        68,
+        382
+    ],
+    "move egg": [
+        85,
+        35
+    ],
+    "close box": [
+        26,
+        78
+    ],
+    "pick up sponge": [
+        32,
+        28,
+        110
+    ],
+    "add oil": [
+        172,
+        40
+    ],
+    "arrange tortilla": [
+        243,
+        126
+    ],
+    "measure salt": [
+        348,
+        71
+    ],
+    "take scale": [
+        12,
+        362
+    ],
+    "switch on stove": [
+        191,
+        73,
+        90
+    ],
+    "put down cheese": [
+        6,
+        57,
+        82
+    ],
+    "put spatula counter": [
+        6,
+        51,
+        21
+    ],
+    "pick up garlic": [
+        32,
+        28,
+        60
+    ],
+    "throw away paper": [
+        113,
+        222,
+        143
+    ],
+    "check potato": [
+        180,
+        38
+    ],
+    "lather soap dish": [
+        65,
+        130,
+        74
+    ],
+    "<pad>": [
+        1
+    ],
+    "<bos>": [
+        2
+    ],
+    "<eos>": [
+        3
+    ]
+}
