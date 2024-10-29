@@ -137,7 +137,8 @@ class EPICDatasetClip(Dataset):
         self.df["label"] = self.df["activity"].apply(lambda x: self.activity_set.index(
             x.replace("-", " ").replace("_", " ")) if x.replace("-", " ").replace("_", " ") in self.activity_set else -1)
 
-        print(f"Warning: Number of error labels: {sum(self.df["label"] < 0)}")
+        sum_error_labels = sum(self.df["label"] < 0)
+        print(f"Warning: Number of error labels: {sum_error_labels}")
 
         # filter error labels to avoid missmatch between train/test dataset and longer clips
         self.df = self.df[(self.df["label"] >= 0) & (127 < self.df["length"])]
@@ -201,21 +202,3 @@ def prepare_data(batch_size=32, debug=False):
         "eval_dl": eval_dl,
         "tokenized_vocab": train_dataset.tokenized_vocab
     }
-
-
-if __name__ == "__main__":
-    dataset = EPICDatasetClip("train")
-    print(dataset.df.iloc[:5])
-
-    it = dataset[5]
-    print(it["tensor"].shape)
-    print(it["tokens"].shape)
-    print(it["tokens"].dtype)
-    print(len(dataset))
-    print(dataset.tokenized_vocab.shape)
-
-    data = prepare_data(32, 600)
-    train_dl = data["train_dl"]
-    test_dl = data["test_dl"]
-
-    batch = next(iter(train_dl))
