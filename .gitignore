@@ -8,3 +8,4 @@ glove.*
 *.pickle
 *.jpg
 *.pdf
+*.safetensors
