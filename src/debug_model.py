@@ -93,7 +93,7 @@ def debug():
         video_text_pos_sim = pos_labels * video_text_similarity
         video_text_neg_sim = neg_labels * video_text_similarity
         
-        max_video_text_neg_sim = torch.max(video_text_neg_sim)
+        max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
                     
         video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
         video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
@@ -101,12 +101,12 @@ def debug():
         video_text_pos_sim_loss = (1 - video_text_pos_sim)
         video_text_neg_sim_loss = video_text_neg_sim
         
-        loss = video_text_loss + video_text_pos_sim_loss
+        loss = video_text_loss + video_text_pos_sim_loss + max_video_text_neg_sim.mean()
         loss.backward()
         optimizer.step()
         
-        print(loss, video_text_loss)
-        print(video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim)
+        print(loss, video_text_loss, video_text_pos_sim_loss, max_video_text_neg_sim.mean())
+        print(video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim.mean())
         
         model.eval_mode()
         with torch.no_grad():
