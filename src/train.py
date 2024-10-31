@@ -4,7 +4,7 @@ from utils.config import TrainingConfig
 options = TrainingConfig(
     learning_rate=1e-4,
     epochs=12,
-    batch_size=3,
+    batch_size=2,
     scheduler_steps=[8, 11],
     loss_accumulation_step=16,
     scheduler_decay=0.1,
