@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from safetensors.torch import load_model, save_model
 
-from model.CHARBlocks import QueryVideoCrossModalEncoder, ObjectVideoCrossModalEncoder, ResNetFrameFeatureExtractur
+from model.CHARBlocks import QueryVideoCrossModalEncoder, ObjectVideoCrossModalEncoder, ResNetFrameFeatureExtractur, AttentionPooling
 
 class CHAR(nn.Module):
     def __init__(self, 
@@ -29,12 +29,14 @@ class CHAR(nn.Module):
         self.object_encoding = nn.Parameter(torch.empty(object_count, transformer_width))
         self.object_encoder = nn.TransformerEncoder(encoder_layers, transformer_layers)
         self.object_ln = nn.LayerNorm(transformer_width)
+        self.object_pool = AttentionPooling(transformer_width, transfromer_nheads)
         
         # Query Text Section
         self.query_embedding = nn.Embedding(vocab_length, transformer_width)
         self.query_encoding = nn.Parameter(torch.empty(sentence_length, transformer_width))
         self.query_encoder = nn.TransformerEncoder(encoder_layers, transformer_layers)
         self.query_ln = nn.LayerNorm(transformer_width)
+        self.query_pool = AttentionPooling(transformer_width, transfromer_nheads)
 
         # Vision Section
         # self.frame_extractor = FrameFeatureExtractor(transformer_width)
@@ -42,6 +44,7 @@ class CHAR(nn.Module):
         self.frame_encoding = nn.Parameter(torch.empty(video_length, transformer_width))
         self.frame_encoder = nn.TransformerEncoder(encoder_layers, transformer_layers)
         self.frame_ln = nn.LayerNorm(transformer_width)
+        self.frame_pool = AttentionPooling(transformer_width, transfromer_nheads)
         
         # cross-modal section
         self.cross_modal_vid_txt_encoder = QueryVideoCrossModalEncoder(transformer_width, 2, dropout)
@@ -73,6 +76,12 @@ class CHAR(nn.Module):
                 nn.init.normal_(layer.self_attn.out_proj.weight, std=proj_std)
                 nn.init.normal_(layer.linear1.weight, std=fc_std)
                 nn.init.normal_(layer.linear2.weight, std=proj_std)
+                
+        for pooling in [self.query_pool, self.frame_pool, self.object_pool]:
+            if pooling.attn is not None:
+                std = pooling.attn.out_proj.in_features ** -0.5
+                nn.init.normal_(pooling.attn.in_proj_weight, std=std)
+                nn.init.normal_(pooling.attn.out_proj.weight, std=std)
             
     def pooling(self, x, dim):
         return torch.max(x, dim=dim)[0]
@@ -84,7 +93,7 @@ class CHAR(nn.Module):
         object_features = torch.reshape(object_features, (B*N, O, D))
         object_features = self.object_encoder(object_features)
         object_features = self.object_ln(object_features)
-        object_features = self.pooling(object_features, dim=1)
+        object_features = self.object_pool(object_features)
         object_features = torch.reshape(object_features, (B, N, D))
         
         return object_features
@@ -94,16 +103,13 @@ class CHAR(nn.Module):
         frame_features = frame_features + self.frame_encoding.type(frame_features.dtype)
         frame_features = self.frame_encoder(frame_features)
         frame_features = self.frame_ln(frame_features)
-        
         return frame_features
         
     def encode_text(self, text):
         words_feature = self.query_embedding(text)
-        
         words_feature = words_feature + self.query_encoding.type(words_feature.dtype)
         words_feature = self.query_encoder(words_feature)
         words_feature = self.query_ln(words_feature)
-        
         return words_feature
     
     def cross_modality(self, frame_features, words_features, object_features):
@@ -117,8 +123,8 @@ class CHAR(nn.Module):
             
             _words_feature, _single_vid_features = self.cross_modal_vid_txt_encoder(words_features, _single_vid_frame_features)
             
-            video_features[i] = self.pooling(_single_vid_features, dim=1)
-            sentence_features[i] = self.pooling(_words_feature, dim=1)
+            video_features[i] = self.frame_pool(_single_vid_features)
+            sentence_features[i] = self.query_pool(_words_feature)
             
         return video_features, sentence_features
 
