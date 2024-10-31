@@ -106,7 +106,7 @@ def debug():
         optimizer.step()
         
         print(loss, video_text_loss)
-        print(video_text_pos_sim, video_text_neg_sim)
+        print(video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim)
         
         model.eval_mode()
         with torch.no_grad():
