@@ -6,36 +6,15 @@ import torchvision
 from torchvision.models._utils import IntermediateLayerGetter
 
 class AttentionPooling(nn.Module):
-    def __init__(self, embedding_dim):
+    """ Adaptation of AttentionPool2D of https://github.com/openai/clip/blob/main/clip/model.py"""
+    def __init__(self, embedding_dim, num_heads):
         super(AttentionPooling, self).__init__()
-        # Initialize a learnable query vector for attention
-        self.query = nn.Parameter(torch.randn(embedding_dim))
+        self.attn = torch.nn.MultiheadAttention(embedding_dim, num_heads, batch_first=False)
 
     def forward(self, x):
-        # x is of shape (batch_size, sequence_length, embedding_dim)
-        # Transpose to shape (batch_size, embedding_dim, sequence_length) for attention calculation
-        x = x.transpose(1, 2)  # Now x is (batch_size, embedding_dim, sequence_length)
-
-        # Calculate attention scores by matrix multiplication of query with each embedding
-        # Here, we expand the query to (batch_size, embedding_dim, 1) to allow broadcasting
-        attention_scores = torch.matmul(self.query.unsqueeze(0), x)  # shape: (batch_size, 1, sequence_length)
-        
-        # Squeeze to remove the extra dimension, shape becomes (batch_size, sequence_length)
-        attention_scores = attention_scores.squeeze(1)
-        
-        # Apply softmax to get attention weights over the sequence
-        attention_weights = F.softmax(attention_scores, dim=1)  # shape: (batch_size, sequence_length)
-        
-        # Expand the attention weights to (batch_size, 1, sequence_length) for weighted sum
-        attention_weights = attention_weights.unsqueeze(1)
-        
-        # Apply attention weights to the input and sum over the sequence dimension
-        pooled_output = torch.bmm(attention_weights, x.transpose(1, 2))  # shape: (batch_size, 1, embedding_dim)
-        
-        # Remove the singleton dimension
-        pooled_output = pooled_output.squeeze(1)  # shape: (batch_size, embedding_dim)
-
-        return pooled_output
+        x = x.permute(1, 0, 2)
+        output, _ = self.attn(x[:1], x, x)
+        return output.squeeze(0)
 
 class ResNetFrameFeatureExtractur(nn.Module):
     """ResNet backbone"""
