@@ -1,1 +1,2 @@
 *.py filter=gitignore
+*.yml filter=gitignore
