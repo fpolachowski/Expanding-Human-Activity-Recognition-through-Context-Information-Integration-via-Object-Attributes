@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from safetensors.torch import load_model, save_model
 
-from src.model.CHARBlocks import QueryVideoCrossModalEncoder, ObjectVideoCrossModalEncoder, ResNetFrameFeatureExtractur
+from model.CHARBlocks import QueryVideoCrossModalEncoder, ObjectVideoCrossModalEncoder, ResNetFrameFeatureExtractur
 
 class CHAR(nn.Module):
     def __init__(self, 
@@ -37,6 +37,7 @@ class CHAR(nn.Module):
         self.query_ln = nn.LayerNorm(transformer_width)
 
         # Vision Section
+        # self.frame_extractor = FrameFeatureExtractor(transformer_width)
         self.frame_extractor = ResNetFrameFeatureExtractur("resnet50", transformer_width)
         self.frame_encoding = nn.Parameter(torch.empty(video_length, transformer_width))
         self.frame_encoder = nn.TransformerEncoder(encoder_layers, transformer_layers)
@@ -45,7 +46,7 @@ class CHAR(nn.Module):
         # cross-modal section
         self.cross_modal_vid_txt_encoder = QueryVideoCrossModalEncoder(transformer_width, 2, dropout)
         self.cross_modal_vid_obj_encoder = ObjectVideoCrossModalEncoder(transformer_width, transformer_layers, dropout)
-        
+
         self.logit_scale = nn.Parameter(torch.ones([]) * np.log(1 / 0.07))
 
         # single GPU assumed
@@ -99,23 +100,29 @@ class CHAR(nn.Module):
     def encode_text(self, text):
         words_feature = self.query_embedding(text)
         
-        words_feature = words_feature + self.query_encoding.type(words_feature.dtype)[:words_feature.shape[1]]
+        words_feature = words_feature + self.query_encoding.type(words_feature.dtype)
         words_feature = self.query_encoder(words_feature)
         words_feature = self.query_ln(words_feature)
         
         return words_feature
     
     def cross_modality(self, frame_features, words_features, object_features):
-        frame_features, object_features = self.cross_modal_vid_obj_encoder(frame_features, object_features)
+        frame_features, _ = self.cross_modal_vid_obj_encoder(frame_features, object_features)
         
-        video_features = self.pooling(frame_features, dim=1).unsqueeze(dim=0)
-        sentence_features = self.pooling(words_features, dim=1).unsqueeze(dim=0)
+        video_features = torch.empty((frame_features.shape[0], words_features.shape[0], frame_features.shape[2]), device=frame_features.device)
+        sentence_features = torch.empty((frame_features.shape[0], words_features.shape[0], frame_features.shape[2]), device=words_features.device)
         
-        sentence_features, video_features = self.cross_modal_vid_txt_encoder(sentence_features, video_features)
+        for i, _single_vid_frame_features in enumerate(frame_features):
+            _single_vid_frame_features = _single_vid_frame_features.unsqueeze(0).repeat(words_features.shape[0], 1, 1)
             
-        return video_features.squeeze(dim=0), sentence_features.squeeze(dim=0)
+            _words_feature, _single_vid_features = self.cross_modal_vid_txt_encoder(words_features, _single_vid_frame_features)
+            
+            video_features[i] = self.pooling(_single_vid_features, dim=1)
+            sentence_features[i] = self.pooling(_words_feature, dim=1)
+            
+        return video_features, sentence_features
 
-    def forward(self, images, texts, pred_det, labels):
+    def forward(self, images, texts, labels, pred_det):
         """
 
         Returns:
@@ -124,34 +131,25 @@ class CHAR(nn.Module):
         frame_features = self.encode_video(images)
         words_features = self.encode_text(texts)
         object_features = self.encode_object(pred_det)
-                
-        # cross modality video <- object && video <-> text
+
+        # cross modality video <- object + video <-> text
         video_features, sentence_features = self.cross_modality(frame_features, words_features, object_features)
         
         # Normalize IMPORTANT!!!
-        video_features = video_features / video_features.norm(dim=1, keepdim=True)
-        sentence_features = sentence_features / sentence_features.norm(dim=1, keepdim=True)
-        
-        video_text_similarity = torch.einsum("nc,ck->nk", [video_features, sentence_features.transpose(1, 0)])
+        video_features = video_features / video_features.norm(dim=2, keepdim=True)
+        sentence_features = sentence_features / sentence_features.norm(dim=2, keepdim=True)
 
-        loss = F.cross_entropy(video_text_similarity, labels) 
+        # cosine similarity as logits
+        video_text_similarity = F.cosine_similarity(video_features, sentence_features, dim=-1)
+        video_text_loss = F.cross_entropy(video_text_similarity, labels)
         
-        # Video text similarity for tracking
-        pos_labels = F.one_hot(labels, video_text_similarity.shape[1])
-        neg_labels = torch.ones(pos_labels.shape, device=pos_labels.device) - pos_labels
-
-        video_text_pos_sim = pos_labels * video_text_similarity
-        video_text_neg_sim = neg_labels * video_text_similarity
-                    
-        video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
-        video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
-        
-        return loss, video_text_pos_sim, video_text_neg_sim
+        return video_text_loss, video_text_similarity
     
-    def forward_eval(self, frames, words_features, object_pred):
-        frame_features = self.encode_video(frames)
-        object_features = self.encode_object(object_pred)
-        video_features, sentence_features = self.cross_modality(frame_features, words_features, object_features)
+    def forward_eval(self, images, words_features, object_features):
+        frame_features = self.encode_video(images)
+        object_features = self.encode_object(object_features)
+        
+        video_features, sentence_features = self.cross_modality(frame_features, words_features, object_features)        
         return video_features, sentence_features
 
     def load_checkpoint(self, exp_folder_path, suffix):
