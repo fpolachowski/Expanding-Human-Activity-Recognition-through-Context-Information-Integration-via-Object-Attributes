@@ -27,7 +27,7 @@ def train(options: TrainingConfig):
     np.random.seed(42)
     torch.manual_seed(42)
     
-    logger = WandbLogger(name="Validation_Training", options=options)
+    logger = WandbLogger(name="New_CHAR_Training", options=options)
     
     # update experiment folder name
     options.experiment_folder = os.path.join(options.experiment_folder, f"{logger.run.name}")
@@ -106,7 +106,7 @@ def train(options: TrainingConfig):
             video_text_pos_sim = pos_labels * video_text_similarity
             video_text_neg_sim = neg_labels * video_text_similarity
             
-            max_video_text_neg_sim = torch.max(video_text_neg_sim)
+            max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
                         
             video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
             video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
@@ -114,11 +114,11 @@ def train(options: TrainingConfig):
             video_text_pos_sim_loss = (1 - video_text_pos_sim)
             video_text_neg_sim_loss = video_text_neg_sim
             
-            loss = video_text_loss + video_text_pos_sim_loss
+            loss = video_text_loss # + video_text_pos_sim_loss + max_video_text_neg_sim.mean()
             
             
             
-            logger.log({"loss": loss.item(), "video_text_pos_sim_loss":video_text_pos_sim_loss.item(), "pos_text_sim": video_text_pos_sim.item(), "neg_text_sim": video_text_neg_sim.item(), "max_neg_sim": max_video_text_neg_sim.item()})
+            logger.log({"loss": loss.item(), "video_text_pos_sim_loss":video_text_pos_sim_loss.item(), "pos_text_sim": video_text_pos_sim.item(), "neg_text_sim": video_text_neg_sim.item(), "max_neg_sim": max_video_text_neg_sim.mean().item()})
             loss /= options.loss_accumulation_step # for loss accumulation
             loss.backward()
             
@@ -142,12 +142,10 @@ def train(options: TrainingConfig):
                         video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
                         evaluator.run_evaluation("train accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
                         evaluator.run_evaluation("train top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
-                        evaluator.run_evaluation("train top_25_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 25))
-            
+                    
                     _, accuracy = evaluator.step("train accuracy", len(test_dl), False)
                     _, top_5_acc = evaluator.step("train top_5_acc", len(test_dl), False)
-                    _, top_25_acc = evaluator.step("train top_25_acc", len(test_dl), False)
-                    logger.log({"train accuracy": accuracy, "train top_5_acc": top_5_acc, "train top_25_acc": top_25_acc})
+                    logger.log({"train accuracy": accuracy, "train top_5_acc": top_5_acc})
                     
                     print("Finished test in epoch {} with accuracy {}".format(epoch, accuracy))
                     
@@ -171,13 +169,11 @@ def train(options: TrainingConfig):
                 video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
                 evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
                 evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
-                evaluator.run_evaluation("top_25_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 25))
-            
+                
             
             best_epoch, accuracy = evaluator.step("accuracy", len(eval_dl))
             _, top_5_acc = evaluator.step("top_5_acc", len(eval_dl))
-            _, top_25_acc = evaluator.step("top_25_acc", len(eval_dl))
-            logger.log({"accuracy": accuracy, "top_5_acc": top_5_acc, "top_25_acc": top_25_acc})
+            logger.log({"accuracy": accuracy, "top_5_acc": top_5_acc})
             
             print("Finished test in epoch {} with accuracy {} / top 5 accuracy {}".format(epoch, accuracy, top_5_acc))
 
