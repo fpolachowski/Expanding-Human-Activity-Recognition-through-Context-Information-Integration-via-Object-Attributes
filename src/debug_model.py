@@ -1,10 +1,11 @@
 import torch
 import random
 import numpy as np
+import torch.nn.functional as F
 
 from dataset.EpicKitchen55 import prepare_data
 from model.CHAR import CHAR
-from utils.util import n_params, calculate_dot_eval_accuracy, calculate_top_N_dot_eval_accuracy
+from utils.util import n_params, calculate_cosine_eval_accuracy, calculate_top_N_cosine_eval_accuracy
 from utils.evaluator import Evaluator
 from model.DETR import DETR
 
@@ -51,7 +52,7 @@ def debug():
         num_queries=16, # max class count = 13
         aux_loss=False
     )
-    detector.load_checkpoint("./experiments/rare-eon-47", "best")
+    detector.load_checkpoint("./src/model", "detr")
     
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
     evaluator = Evaluator(3)
@@ -69,7 +70,7 @@ def debug():
         device = torch.device("cpu")
     
     # prepare data
-    data = prepare_data(batch_size=8)
+    data = prepare_data(batch_size=2)
     train_dl = data["train_dl"]
     eval_dl = data["eval_dl"]
     test_dl = data["test_dl"]
@@ -83,9 +84,24 @@ def debug():
         optimizer.zero_grad()
         images, labels = batch["tensor"].to(device), batch["labels"].to(device)
         pred_det = predict_object_information(detector, images)
-        video_text_loss, video_text_pos_sim, video_text_neg_sim = model(images, tokenized_vocab, pred_det, labels)
+        video_text_loss, video_text_similarity = model(images, tokenized_vocab, labels, pred_det)
+            
+            
+        pos_labels = F.one_hot(labels, model.vocab_length)
+        neg_labels = torch.ones(pos_labels.shape, device=pos_labels.device) - pos_labels
+
+        video_text_pos_sim = pos_labels * video_text_similarity
+        video_text_neg_sim = neg_labels * video_text_similarity
         
-        loss = video_text_loss
+        max_video_text_neg_sim = torch.max(video_text_neg_sim)
+                    
+        video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
+        video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
+        
+        video_text_pos_sim_loss = (1 - video_text_pos_sim)
+        video_text_neg_sim_loss = video_text_neg_sim
+        
+        loss = video_text_loss + video_text_pos_sim_loss
         loss.backward()
         optimizer.step()
         
@@ -100,8 +116,11 @@ def debug():
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
             video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
-            evaluator.run_evaluation("accuracy", calculate_dot_eval_accuracy, (video_feature, sentence_feature, labels))
-            evaluator.run_evaluation("top_5_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 5))
+            
+            print(video_feature.shape, sentence_feature.shape)
+            
+            evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
+            evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
             
             best_epoch, accuracy = evaluator.step("accuracy", 1, check_for_best_epoch=False)
             _, top_5_acc = evaluator.step("top_5_acc", 1, check_for_best_epoch=False)
@@ -119,8 +138,8 @@ def debug():
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
             video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
-            evaluator.run_evaluation("accuracy", calculate_dot_eval_accuracy, (video_feature, sentence_feature, labels))
-            evaluator.run_evaluation("top_5_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 5))
+            evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
+            evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
             
             best_epoch, accuracy = evaluator.step("accuracy", 1)
             _, top_5_acc = evaluator.step("top_5_acc", 1)

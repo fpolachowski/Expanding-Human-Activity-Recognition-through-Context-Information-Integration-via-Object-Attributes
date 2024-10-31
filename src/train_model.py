@@ -2,10 +2,11 @@ import torch
 import random
 import os
 import numpy as np
+import torch.nn.functional as F
 
 from dataset.EpicKitchen55 import prepare_data
 from model.CHAR import CHAR
-from utils.util import n_params, safe_create_folder, calculate_dot_eval_accuracy, calculate_top_N_dot_eval_accuracy 
+from utils.util import n_params, safe_create_folder, calculate_cosine_eval_accuracy, calculate_top_N_cosine_eval_accuracy 
 from utils.evaluator import Evaluator
 from utils.config import TrainingConfig
 from model.DETR import DETR
@@ -96,16 +97,28 @@ def train(options: TrainingConfig):
         for i, batch in enumerate(train_dl):
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
-            video_text_loss, video_text_pos_sim, video_text_neg_sim = model(images, tokenized_vocab, pred_det, labels)
+            video_text_loss, video_text_similarity = model(images, tokenized_vocab, labels, pred_det)
+            
+            
+            pos_labels = F.one_hot(labels, model.vocab_length)
+            neg_labels = torch.ones(pos_labels.shape, device=pos_labels.device) - pos_labels
+
+            video_text_pos_sim = pos_labels * video_text_similarity
+            video_text_neg_sim = neg_labels * video_text_similarity
+            
+            max_video_text_neg_sim = torch.max(video_text_neg_sim)
+                        
+            video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
+            video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
             
             video_text_pos_sim_loss = (1 - video_text_pos_sim)
+            video_text_neg_sim_loss = video_text_neg_sim
             
             loss = video_text_loss + video_text_pos_sim_loss
-            logger.log({
-                "loss": loss.item(), 
-                "pos_text_sim": video_text_pos_sim.item(), 
-                "neg_text_sim": video_text_neg_sim.item(), 
-                "video_text_pos_sim_loss": video_text_pos_sim_loss.item()})
+            
+            
+            
+            logger.log({"loss": loss.item(), "video_text_pos_sim_loss":video_text_pos_sim_loss.item(), "pos_text_sim": video_text_pos_sim.item(), "neg_text_sim": video_text_neg_sim.item(), "max_neg_sim": max_video_text_neg_sim.item()})
             loss /= options.loss_accumulation_step # for loss accumulation
             loss.backward()
             
@@ -125,12 +138,12 @@ def train(options: TrainingConfig):
                     encoded_vocab = model.encode_text(tokenized_vocab)
                     for batch in test_dl:
                         images, labels = batch["tensor"].to(device), batch["labels"].to(device)
-                        # pred_det = predict_object_information(detector, images)
-                        video_feature, sentence_feature = model.forward_eval(images, encoded_vocab)
-                        evaluator.run_evaluation("train accuracy", calculate_dot_eval_accuracy, (video_feature, sentence_feature, labels))
-                        evaluator.run_evaluation("train top_5_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 5))
-                        evaluator.run_evaluation("train top_25_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 25))
-                    
+                        pred_det = predict_object_information(detector, images)
+                        video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
+                        evaluator.run_evaluation("train accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
+                        evaluator.run_evaluation("train top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
+                        evaluator.run_evaluation("train top_25_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 25))
+            
                     _, accuracy = evaluator.step("train accuracy", len(test_dl), False)
                     _, top_5_acc = evaluator.step("train top_5_acc", len(test_dl), False)
                     _, top_25_acc = evaluator.step("train top_25_acc", len(test_dl), False)
@@ -154,11 +167,11 @@ def train(options: TrainingConfig):
             encoded_vocab = model.encode_text(tokenized_vocab)
             for batch in eval_dl:
                 images, labels = batch["tensor"].to(device), batch["labels"].to(device)
-                # pred_det = predict_object_information(detector, images)
-                video_feature, sentence_feature = model.forward_eval(images, encoded_vocab)
-                evaluator.run_evaluation("accuracy", calculate_dot_eval_accuracy, (video_feature, sentence_feature, labels))
-                evaluator.run_evaluation("top_5_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 5))
-                evaluator.run_evaluation("top_25_acc", calculate_top_N_dot_eval_accuracy, (video_feature, sentence_feature, labels, 25))
+                pred_det = predict_object_information(detector, images)
+                video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
+                evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
+                evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
+                evaluator.run_evaluation("top_25_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 25))
             
             
             best_epoch, accuracy = evaluator.step("accuracy", len(eval_dl))
@@ -166,10 +179,13 @@ def train(options: TrainingConfig):
             _, top_25_acc = evaluator.step("top_25_acc", len(eval_dl))
             logger.log({"accuracy": accuracy, "top_5_acc": top_5_acc, "top_25_acc": top_25_acc})
             
-            print("Finished evaluation in epoch {} with accuracy {} / top 5 accuracy {}".format(epoch, accuracy, top_5_acc))
+            print("Finished test in epoch {} with accuracy {} / top 5 accuracy {}".format(epoch, accuracy, top_5_acc))
 
             evaluator.reset()
 
+        # save every N epochs
+        # if not best_epoch and epoch % options.model_save_interval == 1: # since we start with 1
+        #     model.save_checkpoint(options.experiment_folder, f"{epoch}")
         # save best epoch
         if best_epoch:
             safe_create_folder(options.experiment_folder)
