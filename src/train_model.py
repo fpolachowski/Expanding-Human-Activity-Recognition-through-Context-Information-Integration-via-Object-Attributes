@@ -18,7 +18,7 @@ def predict_object_information(detector, images):
     B, N, C, H, W = detection_images.shape
     detection_images = torch.reshape(detection_images, (B*N, C, H, W))
     object_features, _ = detector.predict(detection_images)
-    return torch.reshape(object_features, (B, N, 16, 512)) 
+    return torch.reshape(object_features, (B, N, 16, 512))
 
 
 def train(options: TrainingConfig):
@@ -43,6 +43,7 @@ def train(options: TrainingConfig):
         video_length=64,
         sentence_length=4, # max sentence length = 8
         vocab_length=1596,
+        vocab_size=421,
         transformer_width=256,
         transformer_layers=6,
         dropout=0.1
@@ -65,7 +66,6 @@ def train(options: TrainingConfig):
         aux_loss=False
     )
     detector.load_checkpoint("./src/model", "detr")
-    
     
     optimizer = torch.optim.Adam(model.parameters(), lr=options.learning_rate)
     scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=options.scheduler_steps, gamma=options.scheduler_decay)
@@ -107,18 +107,26 @@ def train(options: TrainingConfig):
             video_text_neg_sim = neg_labels * video_text_similarity
             
             max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
+            max_video_text_pos_sim, _ = video_text_pos_sim.max(dim=1)
+            
+            prediction_diff = (max_video_text_pos_sim - max_video_text_neg_sim).mean()   
                         
             video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
             video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
             
             video_text_pos_sim_loss = (1 - video_text_pos_sim)
-            video_text_neg_sim_loss = video_text_neg_sim
+            # prediction_diff_loss = 2 + (max_video_text_neg_sim - max_video_text_pos_sim).mean()
             
-            loss = video_text_loss # + video_text_pos_sim_loss + max_video_text_neg_sim.mean()
+            loss = video_text_loss + video_text_pos_sim_loss # + prediction_diff_loss # + max_video_text_neg_sim.mean()
             
-            
-            
-            logger.log({"loss": loss.item(), "video_text_pos_sim_loss":video_text_pos_sim_loss.item(), "pos_text_sim": video_text_pos_sim.item(), "neg_text_sim": video_text_neg_sim.item(), "max_neg_sim": max_video_text_neg_sim.mean().item()})
+            logger.log({
+                "loss": loss.item(), 
+                "video_text_pos_sim_loss":video_text_pos_sim_loss.item(), 
+                "avg_pos_text_sim": video_text_pos_sim.item(), 
+                "avg_neg_text_sim": video_text_neg_sim.item(), 
+                "max_neg_sim": max_video_text_neg_sim.mean().item(),
+                "pos_neg_sim_diff": prediction_diff.item(),
+                })
             loss /= options.loss_accumulation_step # for loss accumulation
             loss.backward()
             

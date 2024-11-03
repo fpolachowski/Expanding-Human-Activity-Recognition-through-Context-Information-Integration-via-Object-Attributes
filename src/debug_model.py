@@ -31,6 +31,7 @@ def debug():
         video_length=64,
         sentence_length=4, # max sentence length = 8
         vocab_length=1596,
+        vocab_size=421,
         transformer_width=256,
         transformer_layers=6,
         dropout=0.1
@@ -94,6 +95,9 @@ def debug():
         video_text_neg_sim = neg_labels * video_text_similarity
         
         max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
+        max_video_text_pos_sim, _ = video_text_pos_sim.max(dim=1)
+        
+        prediction_diff = (max_video_text_pos_sim - max_video_text_neg_sim).mean()        
                     
         video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
         video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
@@ -105,7 +109,7 @@ def debug():
         loss.backward()
         optimizer.step()
         
-        print(loss, video_text_loss, video_text_pos_sim_loss, max_video_text_neg_sim.mean())
+        print(loss, video_text_loss, video_text_pos_sim_loss, max_video_text_neg_sim.mean(), prediction_diff)
         print(video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim.mean())
         
         model.eval_mode()
@@ -116,8 +120,6 @@ def debug():
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
             video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
-            
-            print(video_feature.shape, sentence_feature.shape)
             
             evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
             evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
