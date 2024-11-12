@@ -29,9 +29,8 @@ def predict_object_information(detector, images):
 def debug():
     model = CHAR(
         video_length=64,
-        sentence_length=4, # max sentence length = 8
-        vocab_length=1596,
-        vocab_size=421,
+        sentence_length=15, # max sentence length = 8
+        vocab_length=1402,
         transformer_width=256,
         transformer_layers=6,
         dropout=0.1
@@ -85,27 +84,9 @@ def debug():
         optimizer.zero_grad()
         images, labels = batch["tensor"].to(device), batch["labels"].to(device)
         pred_det = predict_object_information(detector, images)
-        video_text_loss, video_text_similarity = model(images, tokenized_vocab, labels, pred_det)
-            
-            
-        pos_labels = F.one_hot(labels, model.vocab_length)
-        neg_labels = torch.ones(pos_labels.shape, device=pos_labels.device) - pos_labels
-
-        video_text_pos_sim = pos_labels * video_text_similarity
-        video_text_neg_sim = neg_labels * video_text_similarity
+        video_text_loss, video_text_pos_sim_loss, video_object_sim, video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim, prediction_diff = model(images, tokenized_vocab, labels, pred_det)
         
-        max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
-        max_video_text_pos_sim, _ = video_text_pos_sim.max(dim=1)
-        
-        prediction_diff = (max_video_text_pos_sim - max_video_text_neg_sim).mean()        
-                    
-        video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
-        video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
-        
-        video_text_pos_sim_loss = (1 - video_text_pos_sim)
-        video_text_neg_sim_loss = video_text_neg_sim
-        
-        loss = video_text_loss + video_text_pos_sim_loss + max_video_text_neg_sim.mean()
+        loss = video_text_loss + video_text_pos_sim_loss
         loss.backward()
         optimizer.step()
         
@@ -119,7 +100,8 @@ def debug():
             batch = next(iter(test_dl))
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
-            video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
+            frame_features = model.encode_video(images)
+            video_feature, sentence_feature = model.forward_eval(frame_features, encoded_vocab, pred_det)
             
             evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
             evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
@@ -139,7 +121,8 @@ def debug():
             batch = next(iter(eval_dl))
             images, labels = batch["tensor"].to(device), batch["labels"].to(device)
             pred_det = predict_object_information(detector, images)
-            video_feature, sentence_feature = model.forward_eval(images, encoded_vocab, pred_det)
+            frame_features = model.encode_video(images)
+            video_feature, sentence_feature = model.forward_eval(frame_features, encoded_vocab, pred_det)
             evaluator.run_evaluation("accuracy", calculate_cosine_eval_accuracy, (video_feature, sentence_feature, labels))
             evaluator.run_evaluation("top_5_acc", calculate_top_N_cosine_eval_accuracy, (video_feature, sentence_feature, labels, 5))
             

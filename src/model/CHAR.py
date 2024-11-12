@@ -4,8 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from safetensors.torch import load_model, save_model
+from src.model.CHARBlocks import ResNetFrameFeatureExtractur, ObjectVideoCrossModalEncoder, QueryVideoCrossModalEncoder
 
-from model.CHARBlocks import QueryVideoCrossModalEncoder, ObjectVideoCrossModalEncoder, ResNetFrameFeatureExtractur, AttentionPooling
 
 class CHAR(nn.Module):
     def __init__(self, 
@@ -13,12 +13,11 @@ class CHAR(nn.Module):
             sentence_length=4,
             object_count=16,
             vocab_length=1596,
-            vocab_size=49383,
             transformer_width=512,
             transformer_layers=6,
             transfromer_nheads=8,
             object_embeddgin_dim=512,
-            dropout=0.1
+            dropout=0.1,
         ):
         super(CHAR, self).__init__()
         self.vocab_length = vocab_length
@@ -32,7 +31,7 @@ class CHAR(nn.Module):
         self.object_ln = nn.LayerNorm(transformer_width)
         
         # Query Text Section
-        self.query_embedding = nn.Embedding(vocab_size, transformer_width)
+        self.query_embedding = nn.Embedding(vocab_length, transformer_width)
         self.query_encoding = nn.Parameter(torch.empty(sentence_length, transformer_width))
         self.query_encoder = nn.TransformerEncoder(encoder_layers, transformer_layers)
         self.query_ln = nn.LayerNorm(transformer_width)
@@ -150,11 +149,25 @@ class CHAR(nn.Module):
         
         # Video text similarity for tracking
         video_text_similarity = F.cosine_similarity(video_features, sentence_features, dim=-1)
+        pos_labels = F.one_hot(labels, self.vocab_length)
+        neg_labels = torch.ones(pos_labels.shape, device=pos_labels.device) - pos_labels
+
+        video_text_pos_sim = pos_labels * video_text_similarity
+        video_text_neg_sim = neg_labels * video_text_similarity
         
-        return video_text_loss, video_text_similarity
+        max_video_text_pos_sim, _ = video_text_pos_sim.max(dim=1)
+        max_video_text_neg_sim, _ = video_text_neg_sim.max(dim=1)
+        prediction_diff = (max_video_text_pos_sim - max_video_text_neg_sim).mean() 
+                    
+        video_text_pos_sim = torch.sum(video_text_pos_sim) / torch.sum(pos_labels) # custom mean as num of pos and neg sample is hugh difference
+        video_text_neg_sim = torch.sum(video_text_neg_sim) / torch.sum(neg_labels) # very similar to mean but more accurate
+        
+        # classification_loss = F.cross_entropy(video_text_similarity, labels)
+        video_text_pos_sim_loss = 1 - video_text_pos_sim
+        
+        return video_text_loss, video_text_pos_sim_loss, video_object_sim, video_text_pos_sim, video_text_neg_sim, max_video_text_neg_sim, prediction_diff 
     
-    def forward_eval(self, images, words_features, object_pred):
-        frame_features = self.encode_video(images)
+    def forward_eval(self, frame_features, words_features, object_pred):
         object_features = self.encode_object(object_pred)
         frame_features, object_features = self.cross_modal_vid_obj_encoder(frame_features, object_features)
         

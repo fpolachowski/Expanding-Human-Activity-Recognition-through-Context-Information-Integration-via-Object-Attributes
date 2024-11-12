@@ -168,7 +168,6 @@ class QueryVideoCrossModalEncoderLayer(nn.Module):
 
         return q2v, v2q
 
-
 class QueryVideoCrossModalEncoder(nn.Module):
     def __init__(self, dim, n_layers, dropout):
         super(QueryVideoCrossModalEncoder, self).__init__()
